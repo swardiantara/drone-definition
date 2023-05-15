@@ -107,9 +107,3 @@ def get_evaluation_score(confusion_matrix):
     }
     overall_score = pd.DataFrame(eval).transpose()
     return eval, overall_score
-
-
-if __name__ == "__main__":
-    cm = pd.read_csv('confusion_matrix_bert-base-cased.csv')
-    confusion_matrix = get_confusion_matrix(cm)
-    get_evaluation_score(confusion_matrix)
