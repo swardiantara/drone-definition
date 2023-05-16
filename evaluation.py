@@ -37,9 +37,8 @@ def build_pred_df(test_df, preds_list, strict=True):
 def get_confusion_matrix(confusion_matrix):
     sum_test = confusion_matrix.sum(axis=0, numeric_only=True).to_list()
     sum_pred = confusion_matrix.sum(axis=1, numeric_only=True).to_list()
-
-    tp_index = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-    tp = [confusion_matrix.iloc[index-1, index] for index in tp_index]
+    tp_index = [index for index in range(0, confusion_matrix.shape[0])]
+    tp = [confusion_matrix.iloc[index, index + 1] for index in tp_index]
     confusion_matrix['TRUE'] = sum_test
     confusion_matrix['PRED'] = sum_pred
     confusion_matrix['TP'] = tp
@@ -107,3 +106,9 @@ def get_evaluation_score(confusion_matrix):
     }
     overall_score = pd.DataFrame(eval).transpose()
     return eval, overall_score
+
+
+if __name__ == "__main__":
+    cm = pd.read_csv('confusion_matrix_bert-base-cased.csv')
+    confusion_matrix = get_confusion_matrix(cm)
+    get_evaluation_score(confusion_matrix)
