@@ -23,10 +23,10 @@ def build_pred_df(test_df, preds_list, strict=True):
         data_prediction['strict'] = data_prediction.apply(
             lambda row: True if row.actual_class == row.predicted_class else False, axis=1)
     else:
-        data_prediction['predicted_non'] = data_prediction.apply(
-            lambda row: row.predicted_class.split('-')[-1], axis=1)
         data_prediction['actual_non'] = data_prediction.apply(
             lambda row: row.actual_class.split('-')[-1], axis=1)
+        data_prediction['predicted_non'] = data_prediction.apply(
+            lambda row: row.predicted_class.split('-')[-1], axis=1)
         data_prediction['non_strict'] = data_prediction.apply(lambda row: True if row.actual_class.split(
             '-')[-1] == row.predicted_class.split('-')[-1] else False, axis=1)
         confusion_matrix = pd.crosstab(
@@ -76,9 +76,9 @@ def get_tp_fp_fn_tn(confusion_matrix, entity='O'):
 def get_evaluation_score(confusion_matrix):
     eval = dict()
     confusion_matrix['entity'] = list(entity.split('-')[-1]
-                                      for entity in confusion_matrix['predicted_class'].unique())
+                                      for entity in confusion_matrix.iloc[:, 0].unique())
     entity_types = list(set([entity.split('-')[-1]
-                        for entity in confusion_matrix['predicted_class'].unique() if entity != 'SUM']))
+                        for entity in confusion_matrix.iloc[:, 0].unique() if entity != 'SUM']))
     for entity in entity_types:
         tp, fp, fn, tn = get_tp_fp_fn_tn(confusion_matrix, entity)
         accuracy, precision, recall, f1 = compute_score(tp, fp, fn, tn)
@@ -107,8 +107,3 @@ def get_evaluation_score(confusion_matrix):
     overall_score = pd.DataFrame(eval).transpose()
     return eval, overall_score
 
-
-if __name__ == "__main__":
-    cm = pd.read_csv('confusion_matrix_bert-base-cased.csv')
-    confusion_matrix = get_confusion_matrix(cm)
-    get_evaluation_score(confusion_matrix)
