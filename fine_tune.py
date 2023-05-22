@@ -100,7 +100,7 @@ def classification(model_type, model_name, train_df, dev_df, test_df):
 
 
 def main():
-    model_types = ['roberta', 'distilroberta', 'xlnet']
+    model_types = ['bert', 'distilbert', 'roberta', 'distilroberta', 'electra', 'xlnet']
     
     for model_type in model_types:
         
