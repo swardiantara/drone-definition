@@ -61,13 +61,13 @@ def check_test_data(test_df, preds_list):
 
 def classification(model_type, model_name, train_df, dev_df, test_df):
     device = True if torch.cuda.is_available() else False
-     # Create a ClassificationModel
+    # Create a ClassificationModel
     label = train_df["labels"].unique().tolist()
     model_args = get_model_args(model_type)
     model = NERModel(model_type, model_name, labels=label,
-                        args=model_args, use_cuda=device)
+                     args=model_args, use_cuda=device)
     output_dir = getattr(model_args, "output_dir")
-
+    output_dir = output_dir.replace('outputs', 'results')
     # Fine-tune the model using our own dataset
     model.train_model(train_df, eval_data=test_df, acc=accuracy_score)
 
@@ -88,22 +88,56 @@ def classification(model_type, model_name, train_df, dev_df, test_df):
     preds_df, cm = build_pred_df(test_df, preds_list, False)
     cm.to_csv(
         "{}/cm_{}.csv".format(output_dir, model_name))
-    preds_df.to_csv("{}/prediction_{}.csv".format(output_dir, model_name), index=False)
+    preds_df.to_csv(
+        "{}/prediction_{}.csv".format(output_dir, model_name), index=False)
     load_cm = pd.read_csv("{}/cm_{}.csv".format(output_dir, model_name))
     confusion_matrix = get_confusion_matrix(load_cm)
     confusion_matrix.to_csv(
         "{}/confusion_matrix_{}.csv".format(output_dir, model_name), index=False)
     eval_dict, eval_df = get_evaluation_score(confusion_matrix)
     eval_df.to_csv(
-        "{}/evaluation_score{}.csv".format(output_dir, model_name))
+        "{}/evaluation_score_{}.csv".format(output_dir, model_name))
 
+
+def recap_evaluation(outputdir, filename):
+    dirs = [os.path.join(outputdir, folder)
+            for folder in os.listdir(outputdir)]
+    files = [[
+        os.path.join(dir, file) for file in os.listdir(dir) if 'evaluation' in file
+    ] for dir in dirs]
+    for [file] in files:
+        model_name = file.split('/')[-1].split('.')[0].split('_')[-1]
+        df = pd.read_csv(file)
+        row_dict = {}
+        row_dict['model'] = model_name
+        for row in range(0, df.shape[0]):
+            for column in df.columns:
+                if "Unnamed" in column:
+                    continue
+                key = "{}_{}".format(df.iloc[row, 0], column)
+                value = df.loc[row, column]
+                row_dict[key] = value
+
+        # Update the overall models' performance evaluation score
+        if os.path.exists(filename):
+            eval_df = pd.read_csv(filename)
+            eval_df = pd.concat([eval_df, pd.DataFrame([row_dict])],
+                                ignore_index=True)
+            eval_df.to_csv(filename, index=False)
+        else:
+            eval_df = pd.DataFrame(row_dict, index=[0])
+            eval_df.to_csv(filename, index=False)
+
+    overall_eval_df = pd.read_csv(filename)
+    return overall_eval_df
 
 
 def main():
-    model_types = ['bert', 'distilbert', 'roberta', 'distilroberta', 'electra', 'xlnet']
-    
+    model_types = ['bert', 'distilbert', 'roberta',
+                   'distilroberta', 'electra', 'xlnet']
+
     for model_type in model_types:
-        
+
         model_type, model_name = get_model_name(model_type)
         train_df, dev_df, test_df = load_dataset('dataset')
         # test_df = test_df.iloc[:100]
@@ -116,9 +150,9 @@ def main():
         train_stat.to_csv('dataset/airdata_train_70_stat.csv')
         dev_stat.to_csv('dataset/dev_stat.csv')
         test_stat.to_csv('dataset/airdata_test_70_stat.csv')
-        
+
         classification(model_type, model_name, train_df, dev_df, test_df)
-       
+        recap_evaluation('results', 'results/overall_evaluation.csv')
 
 
 if __name__ == "__main__":
