@@ -129,6 +129,7 @@ dmypy.json
 .pyre/
 
 # models
+model/pytorch_model.bin
 outputs
 runs
 cache_dir
