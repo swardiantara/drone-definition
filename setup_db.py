@@ -75,6 +75,10 @@ def create_tables(connection):
                             prompt_id INTEGER NOT NULL,
                             prompt TEXT NOT NULL,
                             counter INTEGER NOT NULL,
+                            cosine_distance FLOAT NULL,
+                            euclidean_distance FLOAT NULL,
+                            manhattan_distance FLOAT NULL,
+                            sum_distance FLOAT NULL,
                             FOREIGN KEY (term_id) REFERENCES terms (id),
                             FOREIGN KEY (prompt_id) REFERENCES prompts (id),
                             FOREIGN KEY (model_id) REFERENCES models (id))'''
