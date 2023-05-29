@@ -88,19 +88,22 @@ def create_tables(connection):
 
 def insert_data(connection):
     cursor = connection.cursor()
-    cursor.execute('''INSERT INTO 'entity_types' ('name', 'description') VALUES 
-                    ('Issue', 'Words/phrases that indicate some issues happen to the drone.'),
-                    ('Parameter', 'Words/phrases that represent some parameters of configuration in a drone.'),
-                    ('Action', 'Words/phrases that indicate some actions taken by the drone.'),
-                    ('Component', 'Words/phrases that reflect physical components of a drone.'),
-                    ('Function', 'Words/phrases that denote some functionalities or features of a drone equipped with.'),
-                    ('State', 'Words/phrases that notify a state/mode of a drone operates in during a flight.')
+    # cursor.execute('''INSERT INTO 'entity_types' ('name', 'description') VALUES
+    #                 ('Issue', 'Words/phrases that indicate some issues happen to the drone.'),
+    #                 ('Parameter', 'Words/phrases that represent some parameters of configuration in a drone.'),
+    #                 ('Action', 'Words/phrases that indicate some actions taken by the drone.'),
+    #                 ('Component', 'Words/phrases that reflect physical components of a drone.'),
+    #                 ('Function', 'Words/phrases that denote some functionalities or features of a drone equipped with.'),
+    #                 ('State', 'Words/phrases that notify a state/mode of a drone operates in during a flight.')
+    #                 ''')
+    # cursor.execute('''INSERT INTO 'prompt_templates' ('name', 'template', 'description') VALUES
+    #                 ('persona', 'Provide the definition of term drone entity_type from a drone expert perspective!', 'Prompt template by using persona.'),
+    #                 ('query', 'Define term drone entity_type!', 'Prompt template by using query template for retrieval.')
+    #                 ''')
+    cursor.execute('''INSERT INTO 'models' ('model_name', 'company', 'version', 'size') VALUES
+                    ('chatgpt', 'Open AI', 'text-davinci-003', NULL),
+                    ('chatsonic', 'Write Sonic', 'premium', NULL)
                     ''')
-    cursor.execute('''INSERT INTO 'prompt_templates' ('name', 'template', 'description') VALUES
-                    ('persona', 'Provide the definition of term drone entity_type from a drone expert perspective!', 'Prompt template by using persona'),
-                    ('query', 'Define term drone entity_type!', 'Prompt template by using query template for retrieval'),
-                    ''')
-
     connection.commit()
 
 

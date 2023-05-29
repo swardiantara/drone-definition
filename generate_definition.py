@@ -1,11 +1,37 @@
 import os
 import openai
+import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances, cosine_distances, manhattan_distances
 from InstructorEmbedding import INSTRUCTOR
 from dotenv import load_dotenv
 
 load_dotenv()
+
+
+def build_item_list(preds_df):
+    item_list = []
+    term = ""
+    label = ""
+    for row in range(0, preds_df.shape[0]):
+        current_word = preds_df.iloc[row, 0]
+        # next_word = preds_df.iloc[row + 1, 0]
+        current_label = preds_df.iloc[row, 2]
+        # next_label = preds_df.iloc[row + 1, 2]
+        if current_label == 'O':
+            if term != "":
+                item_list.append((term, label))
+            term = ""
+            label = ""
+            continue
+        elif current_label.split('-')[0] == "B":
+            if term != "":
+                item_list.append((term, label))
+            term = current_word
+            label = current_label.split('-')[-1]
+        else:
+            term = term + " " + current_word
+    return item_list
 
 
 def main():
@@ -66,13 +92,19 @@ def compute_distance(prompt, definition):
 
 
 if __name__ == "__main__":
-    term = "Obstacle Avoidance"
-    entity_type = 'function'
-    prompt = "Provide the definition of {} drone {} from a drone expert perspective".format(
-        term, entity_type)
-    file = open("definitions/chatgpt/Obstacle_Avoidance.txt", "r")
-    definition = file.read()
-    euclidean_distance, cosine_distance, cosine_sim_score, manhattan_distance = compute_distance(
-        prompt, definition)
-    print(euclidean_distance, cosine_distance,
-          cosine_sim_score, manhattan_distance)
+
+    pred_df = pd.read_csv(
+        "results/bert-base-cased/prediction_bert-base-cased.csv")
+    item_list = build_item_list(pred_df)
+    print(item_list)
+    # main()
+    # term = "Obstacle Avoidance"
+    # entity_type = 'function'
+    # prompt = "Provide the definition of {} drone {} from a drone expert perspective".format(
+    #     term, entity_type)
+    # file = open("definitions/chatgpt/Obstacle_Avoidance.txt", "r")
+    # definition = file.read()
+    # euclidean_distance, cosine_distance, cosine_sim_score, manhattan_distance = compute_distance(
+    #     prompt, definition)
+    # print(euclidean_distance, cosine_distance,
+    #       cosine_sim_score, manhattan_distance)
