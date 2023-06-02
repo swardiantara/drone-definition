@@ -67,7 +67,7 @@ def classification(model_type, model_name, train_df, dev_df, test_df):
     model = NERModel(model_type, model_name, labels=label,
                      args=model_args, use_cuda=device)
     output_dir = getattr(model_args, "output_dir")
-    output_dir = output_dir.replace('outputs', 'results')
+    output_dir = output_dir.replace('outputs', 'ner_results')
     # Fine-tune the model using our own dataset
     model.train_model(train_df, eval_data=test_df, acc=accuracy_score)
 
@@ -152,7 +152,7 @@ def main():
         test_stat.to_csv('dataset/airdata_test_70_stat.csv')
 
         classification(model_type, model_name, train_df, dev_df, test_df)
-        recap_evaluation('results', 'results/overall_evaluation.csv')
+        recap_evaluation('ner_results', 'ner_results/overall_evaluation.csv')
 
 
 if __name__ == "__main__":
