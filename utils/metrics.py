@@ -18,9 +18,9 @@ def compute_distance(prompt, definition, model='instructor'):
         1, -1) if model == 'instructor' else embedder.encode(definition).reshape(1, -1)
 
     # Compute the distance metrics
-    euclidean_distance = euclidean_distances(
+    [[euclidean_distance]] = euclidean_distances(
         query_embedding, document_embedding)
-    cosine_distance = cosine_distances(query_embedding, document_embedding)
-    manhattan_distance = manhattan_distances(
+    [[cosine_distance]] = cosine_distances(query_embedding, document_embedding)
+    [[manhattan_distance]] = manhattan_distances(
         query_embedding, document_embedding)
     return euclidean_distance, cosine_distance, manhattan_distance
