@@ -4,7 +4,7 @@ import math
 import numpy as np
 import pandas as pd
 import torch
-from evaluation import build_pred_df, get_confusion_matrix, get_evaluation_score
+from utils.evaluation import build_pred_df, get_confusion_matrix, get_evaluation_score
 from simpletransformers.ner import NERModel, NERArgs
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
