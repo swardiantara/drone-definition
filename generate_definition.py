@@ -8,7 +8,7 @@ import numpy as np
 import sqlite3
 from dotenv import load_dotenv
 from setup_db import get_connection
-from database.queries import get_term, insert_term, insert_definition, get_counter, get_definition
+from database.queries import get_term, insert_term, update_term, insert_definition, get_counter, get_definition
 from hugchat import hugchat
 from hugchat.login import Login
 
@@ -26,7 +26,7 @@ def build_item_list(preds_df):
         # next_word = preds_df.iloc[row + 1, 0]
         current_label = preds_df.iloc[row, 2]
         current_type = current_label.split('-')[-1]
-        verdict = preds_df.iloc[row, index_verdict].lower()
+        verdict = str(preds_df.iloc[row, index_verdict]).lower()
         if current_label == 'O':
             if term != "":
                 # print("index: ", row+1)
@@ -65,7 +65,16 @@ def chatgpt_pipeline(db_path, item_list):
         entity_type = entity_type.lower()
         term_exists = get_term(connection, term, entity_type)
         if term_exists == None:
-            insert_term(connection, term, entity_type, verdict)
+            inserted_term = insert_term(connection, term, entity_type, verdict)
+        else:
+            update_term(connection, term_exists[0], verdict)
+        term_id = term_exists[0] if term_exists != None else inserted_term
+
+        # Check if the definition exists
+        definition_exist = get_definition(connection,
+                                          term_id, 'gptturbo')
+        if definition_exist != None:
+            continue
 
         # Prompt if the definition does not exist
         prompt = "Provide the definition of {} drone {} from a drone expert perspective".format(
@@ -301,6 +310,53 @@ def alpaca_pipeline(db_path, item_list):
     print("\nAlpaca Pipeline finished successfully!")
 
 
+def gptturbo_pipeline(db_path, item_list):
+    # Load your API key from an environment variable or secret management service
+    print("Running GPT Turbo pipeline...")
+    openai.api_key = os.getenv("CHATGPT_KEY")
+    # try:
+    connection = get_connection(db_path)
+    for term, entity_type, verdict in item_list:
+        # Check if the term exists in the DB, insert if does not exists
+        entity_type = entity_type.lower()
+        term_exists = get_term(connection, term, entity_type)
+        if term_exists == None:
+            inserted_term = insert_term(connection, term, entity_type, verdict)
+        else:
+            update_term(connection, term_exists[0], verdict)
+        term_id = term_exists[0] if term_exists != None else inserted_term
+
+        # Check if the definition exists
+        definition_exist = get_definition(connection,
+                                          term_id, 'gptturbo')
+        if definition_exist != None:
+            continue
+
+        # Prompt if the definition does not exist
+        prompt = "Provide the definition of {} drone {} from a drone expert perspective".format(
+            term, entity_type)
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo", messages=[{"role": "user", "content": prompt}])
+        definition = response.choices[0].message.content
+
+        # Save the definition into .txt files for backup
+        isExist = os.path.exists('definitions/gptturbo')
+        if not isExist:
+            # Create a new directory because it does not exist
+            os.makedirs('definitions/gptturbo')
+        with open('definitions/gptturbo/{}-{}.txt'.format(term.replace(' ', '_'), entity_type), 'w') as file:
+            file.write(definition)
+
+        # Store the definition to the DB
+        inserted_definition = insert_definition(
+            connection, term, entity_type, 'gptturbo', prompt, definition)
+        if isinstance(inserted_definition, sqlite3.Error):
+            continue
+        elif inserted_definition == False:
+            continue
+    print("\nGPT Turbo Pipeline finished successfully!")
+
+
 def main():
     # Load your API key from an environment variable or secret management service
     openai.api_key = os.getenv("CHATGPT_KEY")
@@ -310,9 +366,9 @@ def main():
     item_list = build_item_list(pred_df)
     db_path = 'database/drone_definitions.db'
     # Run ChatGPT Pipeline to generate definitions from OpenAI ChatGPT
-    # chatgpt_pipeline(db_path, item_list)
+    gptturbo_pipeline(db_path, item_list)
     # chatsonic_pipeline(db_path, item_list)
-    alpaca_pipeline(db_path, item_list)
+    # alpaca_pipeline(db_path, item_list)
     # huggingface_pipeline(db_path, item_list)
     # terms = [('Obstacle Avoidance', 'function'), ('Palm Control',
     #   'function'), ('Auxiliary Bottom Light', 'component')]
