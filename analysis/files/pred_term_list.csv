@@ -1,0 +1,249 @@
+,id,term,entity_type,is_term
+0,1,taking off,component,False
+1,2,taking off,component,False
+2,3,palmcontrol,component,True
+3,4,palmcontrol,state,True
+4,5,palmcontrol,function,False
+5,6,palmcontrol,issue,False
+6,7,taking off,component,True
+7,8,taking off,parameter,True
+8,9,taking off,function,True
+9,10,rth altitude,function,False
+10,11,taking off,issue,True
+11,12,landing,action,False
+12,13,data recorder,parameter,True
+13,14,file index,state,True
+14,15,home point,state,False
+15,16,downlink lost,state,True
+16,17,home point,function,True
+17,18,landing gear,function,True
+18,19,landing gear,parameter,True
+19,20,landing gear,parameter,False
+20,21,landing gear,function,False
+21,22,landing gear,action,True
+22,23,landing gear,parameter,False
+23,24,command timeout,state,True
+24,25,low power,parameter,True
+25,26,aircraft,function,True
+26,27,home point,parameter,True
+27,28,landing gear,parameter,True
+28,29,data recorder,parameter,True
+29,30,file index,function,True
+30,31,exited,function,True
+31,32,visual avoidance system,component,True
+32,33,landing gear,state,False
+33,34,aircraft,function,True
+34,35,home point,parameter,True
+35,36,minimum rth altitude,component,True
+36,37,rth altitude,issue,True
+37,38,remote controller settings,action,True
+38,39,rth,parameter,True
+39,40,landing gear,component,True
+40,41,gps position mismatch,parameter,True
+41,42,gps position mismatch,parameter,False
+42,43,gps position mismatch,action,True
+43,44,gps position mismatch,component,True
+44,45,gps position mismatch,issue,False
+45,46,gps position mismatch,issue,True
+46,47,gps position mismatch,issue,True
+47,48,data recorder,component,True
+48,49,file index,function,True
+49,50,strong wireless interference,component,True
+50,51,obstacle avoidance,state,True
+51,52,motors,issue,False
+52,53,strong wireless interference,action,True
+53,54,landing gear,issue,True
+54,55,home point,state,True
+55,56,rth altitude,action,True
+56,57,landing gear,parameter,False
+57,58,obstacle avoidance,component,True
+58,59,landing protection,state,True
+59,60,aircraft,component,True
+60,61,taking off,component,True
+61,62,taking off,issue,False
+62,63,home point,issue,False
+63,64,rth altitude,function,False
+64,65,aircraft,issue,True
+65,66,aircraft,component,True
+66,67,landing gear,issue,True
+67,68,obstacle avoidance,issue,True
+68,69,obstacle avoidance,issue,False
+69,70,landing gear,issue,True
+70,71,obstacle avoidance,function,True
+71,72,strong wireless interference,action,True
+72,73,strong wireless interference,issue,True
+73,74,large wind velocity,issue,True
+74,75,large wind velocity,action,True
+75,76,magnetic filed interference,parameter,True
+76,77,p-gps mode,component,True
+77,78,motors,issue,False
+78,79,gps position mismatch,action,True
+79,80,gps position mismatch,issue,True
+80,81,gps position mismatch,function,False
+81,82,downlink lost,component,True
+82,83,gps position mismatch,issue,True
+83,84,gps position mismatch,parameter,False
+84,85,gps position mismatch,component,True
+85,86,gps position mismatch,component,True
+86,87,gps position mismatch,parameter,True
+87,88,gps position mismatch,parameter,True
+88,89,yaw error,function,True
+89,90,yaw error,function,True
+90,91,yaw error,component,True
+91,92,gps position mismatch,parameter,True
+92,93,gps position mismatch,function,False
+93,94,gps position mismatch,component,False
+94,95,downlink lost,function,False
+95,96,rth route,action,True
+96,97,aircraft,function,True
+97,98,rth failure,parameter,False
+98,99,max flight distance,parameter,False
+99,100,main controller settings,issue,True
+100,101,battery,parameter,True
+101,102,rth,parameter,False
+102,103,low power,component,True
+103,104,aircraft,component,True
+104,105,home point,parameter,True
+105,106,battery,parameter,True
+106,107,rth,component,True
+107,108,taking off,parameter,False
+108,109,landing gear,parameter,False
+109,110,obstacle avoidance,parameter,False
+110,111,obstacle avoidance,function,True
+111,112,obstacle avoidance,component,False
+112,113,landing protection,parameter,False
+113,114,aircraft,issue,False
+114,115,gimbal pitch limit,parameter,True
+115,116,obstacle sensing,parameter,True
+116,117,aircraft,parameter,True
+117,118,data recorder,action,False
+118,119,file index,issue,True
+119,120,home point,component,True
+120,121,landing gear,parameter,True
+121,122,gps position mismatch,issue,False
+122,123,gps position mismatch,component,True
+123,124,gps position mismatch,function,True
+124,125,gps position mismatch,issue,False
+125,126,gps position mismatch,state,True
+126,127,gps position mismatch,function,True
+127,128,gps position mismatch,action,True
+128,129,gps position mismatch,parameter,True
+129,130,gps position mismatch,component,True
+130,131,gps position mismatch,component,True
+131,132,gps position mismatch,component,True
+132,133,gps position mismatch,function,True
+133,134,gps position mismatch,parameter,True
+134,135,gps position mismatch,component,True
+135,136,gps position mismatch,state,True
+136,137,gps position mismatch,issue,True
+137,138,gps position mismatch,issue,True
+138,139,gps position mismatch,state,False
+139,140,gps position mismatch,issue,False
+140,141,gps position mismatch,component,True
+141,142,gps position mismatch,issue,True
+142,143,gps position mismatch,action,True
+143,144,gps position mismatch,function,False
+144,145,gps position mismatch,component,False
+145,146,gps position mismatch,issue,True
+146,147,gps position mismatch,issue,True
+147,148,gps position mismatch,issue,True
+148,149,gps position mismatch,issue,False
+149,150,gps position mismatch,component,True
+150,151,gps position mismatch,issue,True
+151,152,gps position mismatch,component,True
+152,153,gps position mismatch,action,True
+153,154,gps position mismatch,function,False
+154,155,gps position mismatch,parameter,True
+155,156,gps position mismatch,component,True
+156,157,gps position mismatch,parameter,True
+157,158,gps position mismatch,parameter,True
+158,159,gps position mismatch,issue,True
+159,160,gps position mismatch,component,True
+160,161,gps position mismatch,issue,True
+161,162,gps position mismatch,issue,True
+162,163,gps position mismatch,action,True
+163,164,gps position mismatch,function,True
+164,165,gps position mismatch,parameter,True
+165,166,gps position mismatch,function,True
+166,167,gps position mismatch,action,True
+167,168,gps position mismatch,issue,True
+168,169,gps position mismatch,issue,True
+169,170,gps position mismatch,component,True
+170,171,gps position mismatch,component,True
+171,172,gimbal roll limit,function,True
+172,173,gimbal pitch limit,issue,True
+173,174,landing gear,issue,True
+174,175,landing gear,state,True
+175,176,obstacle avoidance,issue,True
+176,177,gimbal yaw limit,parameter,True
+177,178,data recorder,parameter,False
+178,179,file index,parameter,True
+179,180,gps position mismatch,function,True
+180,181,gps position mismatch,parameter,True
+181,182,gps position mismatch,function,True
+182,183,gps position mismatch,parameter,False
+183,184,data recorder,parameter,False
+184,185,file index,parameter,True
+185,186,data recorder,parameter,True
+186,187,file index,function,True
+187,188,home point,parameter,True
+188,189,data recorder,action,True
+189,190,file index,state,True
+190,191,data recorder,parameter,True
+191,192,file index,function,True
+192,193,data recorder,state,True
+193,194,file index,state,True
+194,195,home point,parameter,True
+195,196,data recorder,component,True
+196,197,file index,issue,True
+197,198,data recorder,parameter,True
+198,199,file index,function,True
+199,200,data recorder,parameter,True
+200,201,file index,function,True
+201,202,gps position mismatch,parameter,True
+202,203,gps position mismatch,state,True
+203,204,gps position mismatch,state,True
+204,205,gps position mismatch,state,True
+205,206,gps position mismatch,function,True
+206,207,gps position mismatch,parameter,True
+207,208,gps position mismatch,component,True
+208,209,gps position mismatch,function,True
+209,210,intelligent flight modes,state,True
+210,211,main controller settings,action,True
+211,212,gimbal yaw limit,issue,True
+212,213,gimbal yaw limit,issue,True
+213,214,battery health,issue,True
+214,215,aircraft,function,True
+215,216,home point,state,True
+216,217,return to home,state,True
+217,218,auto landing,state,True
+218,219,taking off,action,True
+219,220,flight mode,issue,True
+220,221,multiple flight modes,parameter,True
+221,222,atti,issue,True
+222,223,sport modes,function,True
+223,224,landing,action,True
+224,225,flight mode,parameter,True
+225,226,multiple flight modes,state,True
+226,227,atti,parameter,True
+227,228,sport modes,state,True
+228,229,gps position mismatch,state,True
+229,230,gps position mismatch,issue,True
+230,231,gps position mismatch,parameter,True
+231,232,gps position mismatch,action,True
+232,233,gps position mismatch,function,True
+233,234,gps position mismatch,action,True
+234,235,gps position mismatch,state,True
+235,236,gps position mismatch,state,True
+236,237,gps position mismatch,parameter,True
+237,238,gps position mismatch,state,True
+238,239,gps position mismatch,action,True
+239,240,large wind velocity,action,True
+240,241,gps position mismatch,parameter,True
+241,242,gps position mismatch,function,True
+242,243,gps position mismatch,component,True
+243,244,gps position mismatch,state,True
+244,245,gps position mismatch,component,True
+245,246,gps position mismatch,action,False
+246,247,gps position mismatch,state,True
+247,248,gps position mismatch,component,False
