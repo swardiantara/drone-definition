@@ -1,0 +1,998 @@
+,term,entity
+0,taking off,ACTION
+1,taking off,ACTION
+2,palmcontrol,ACTION
+3,palmcontrol,ACTION
+4,palmcontrol,ACTION
+5,palmcontrol,ACTION
+6,taking off,ACTION
+7,taking off,ACTION
+8,taking off,ACTION
+9,rth altitude,PARAMETER
+10,taking off,ACTION
+11,landing,ACTION
+12,data recorder,COMPONENT
+13,file index,PARAMETER
+14,home point,PARAMETER
+15,downlink lost,ISSUE
+16,home point,PARAMETER
+17,landing gear,COMPONENT
+18,landing gear,COMPONENT
+19,landing gear,COMPONENT
+20,landing gear,COMPONENT
+21,landing gear,COMPONENT
+22,landing gear,COMPONENT
+23,command timeout,ISSUE
+24,low power,ISSUE
+25,aircraft,COMPONENT
+26,home point,PARAMETER
+27,landing gear,COMPONENT
+28,data recorder,COMPONENT
+29,file index,PARAMETER
+30,exited,ACTION
+31,visual avoidance system,FUNCTION
+32,landing gear,COMPONENT
+33,aircraft,COMPONENT
+34,home point,PARAMETER
+35,minimum rth altitude,PARAMETER
+36,rth altitude,PARAMETER
+37,remote controller settings,FUNCTION
+38,rth,ACTION
+39,landing gear,COMPONENT
+40,gps position mismatch,ISSUE
+41,gps position mismatch,ISSUE
+42,gps position mismatch,ISSUE
+43,gps position mismatch,ISSUE
+44,gps position mismatch,ISSUE
+45,gps position mismatch,ISSUE
+46,gps position mismatch,ISSUE
+47,data recorder,COMPONENT
+48,file index,PARAMETER
+49,strong wireless interference,ISSUE
+50,obstacle avoidance,FUNCTION
+51,motors,COMPONENT
+52,strong wireless interference,ISSUE
+53,landing gear,COMPONENT
+54,home point,PARAMETER
+55,rth altitude,PARAMETER
+56,landing gear,COMPONENT
+57,obstacle avoidance,FUNCTION
+58,landing protection,FUNCTION
+59,aircraft,COMPONENT
+60,taking off,ACTION
+61,taking off,ACTION
+62,home point,PARAMETER
+63,rth altitude,PARAMETER
+64,aircraft,COMPONENT
+65,aircraft,COMPONENT
+66,landing gear,COMPONENT
+67,obstacle avoidance,FUNCTION
+68,obstacle avoidance,FUNCTION
+69,landing gear,COMPONENT
+70,obstacle avoidance,FUNCTION
+71,strong wireless interference,ISSUE
+72,strong wireless interference,ISSUE
+73,large wind velocity,ISSUE
+74,large wind velocity,ISSUE
+75,magnetic filed interference,ISSUE
+76,p-gps mode,STATE
+77,motors,COMPONENT
+78,gps position mismatch,ISSUE
+79,gps position mismatch,ISSUE
+80,gps position mismatch,ISSUE
+81,downlink lost,ISSUE
+82,gps position mismatch,ISSUE
+83,gps position mismatch,ISSUE
+84,gps position mismatch,ISSUE
+85,gps position mismatch,ISSUE
+86,gps position mismatch,ISSUE
+87,gps position mismatch,ISSUE
+88,yaw error,ISSUE
+89,yaw error,ISSUE
+90,yaw error,ISSUE
+91,gps position mismatch,ISSUE
+92,gps position mismatch,ISSUE
+93,gps position mismatch,ISSUE
+94,downlink lost,ISSUE
+95,rth route,PARAMETER
+96,aircraft,COMPONENT
+97,rth failure,ISSUE
+98,max flight distance,PARAMETER
+99,main controller settings,FUNCTION
+100,battery,COMPONENT
+101,rth,ACTION
+102,low power,ISSUE
+103,aircraft,COMPONENT
+104,home point,PARAMETER
+105,battery,COMPONENT
+106,rth,ACTION
+107,taking off,ACTION
+108,landing gear,COMPONENT
+109,obstacle avoidance,FUNCTION
+110,obstacle avoidance,FUNCTION
+111,obstacle avoidance,FUNCTION
+112,landing protection,FUNCTION
+113,aircraft,COMPONENT
+114,gimbal pitch limit,PARAMETER
+115,obstacle sensing,FUNCTION
+116,aircraft,COMPONENT
+117,data recorder,COMPONENT
+118,file index,PARAMETER
+119,home point,PARAMETER
+120,landing gear,COMPONENT
+121,gps position mismatch,ISSUE
+122,gps position mismatch,ISSUE
+123,gps position mismatch,ISSUE
+124,gps position mismatch,ISSUE
+125,gps position mismatch,ISSUE
+126,gps position mismatch,ISSUE
+127,gps position mismatch,ISSUE
+128,gps position mismatch,ISSUE
+129,gps position mismatch,ISSUE
+130,gps position mismatch,ISSUE
+131,gps position mismatch,ISSUE
+132,gps position mismatch,ISSUE
+133,gps position mismatch,ISSUE
+134,gps position mismatch,ISSUE
+135,gps position mismatch,ISSUE
+136,gps position mismatch,ISSUE
+137,gps position mismatch,ISSUE
+138,gps position mismatch,ISSUE
+139,gps position mismatch,ISSUE
+140,gps position mismatch,ISSUE
+141,gps position mismatch,ISSUE
+142,gps position mismatch,ISSUE
+143,gps position mismatch,ISSUE
+144,gps position mismatch,ISSUE
+145,gps position mismatch,ISSUE
+146,gps position mismatch,ISSUE
+147,gps position mismatch,ISSUE
+148,gps position mismatch,ISSUE
+149,gps position mismatch,ISSUE
+150,gps position mismatch,ISSUE
+151,gps position mismatch,ISSUE
+152,gps position mismatch,ISSUE
+153,gps position mismatch,ISSUE
+154,gps position mismatch,ISSUE
+155,gps position mismatch,ISSUE
+156,gps position mismatch,ISSUE
+157,gps position mismatch,ISSUE
+158,gps position mismatch,ISSUE
+159,gps position mismatch,ISSUE
+160,gps position mismatch,ISSUE
+161,gps position mismatch,ISSUE
+162,gps position mismatch,ISSUE
+163,gps position mismatch,ISSUE
+164,gps position mismatch,ISSUE
+165,gps position mismatch,ISSUE
+166,gps position mismatch,ISSUE
+167,gps position mismatch,ISSUE
+168,gps position mismatch,ISSUE
+169,gps position mismatch,ISSUE
+170,gps position mismatch,ISSUE
+171,gimbal roll limit,PARAMETER
+172,gimbal pitch limit,PARAMETER
+173,landing gear,COMPONENT
+174,landing gear,COMPONENT
+175,obstacle avoidance,FUNCTION
+176,gimbal yaw limit,PARAMETER
+177,data recorder,COMPONENT
+178,file index,PARAMETER
+179,gps position mismatch,ISSUE
+180,gps position mismatch,ISSUE
+181,gps position mismatch,ISSUE
+182,gps position mismatch,ISSUE
+183,data recorder,COMPONENT
+184,file index,PARAMETER
+185,data recorder,COMPONENT
+186,file index,PARAMETER
+187,home point,PARAMETER
+188,data recorder,COMPONENT
+189,file index,PARAMETER
+190,data recorder,COMPONENT
+191,file index,PARAMETER
+192,data recorder,COMPONENT
+193,file index,PARAMETER
+194,home point,PARAMETER
+195,data recorder,COMPONENT
+196,file index,PARAMETER
+197,data recorder,COMPONENT
+198,file index,PARAMETER
+199,data recorder,COMPONENT
+200,file index,PARAMETER
+201,gps position mismatch,ISSUE
+202,gps position mismatch,ISSUE
+203,gps position mismatch,ISSUE
+204,gps position mismatch,ISSUE
+205,gps position mismatch,ISSUE
+206,gps position mismatch,ISSUE
+207,gps position mismatch,ISSUE
+208,gps position mismatch,ISSUE
+209,intelligent flight modes,FUNCTION
+210,main controller settings,FUNCTION
+211,gimbal yaw limit,PARAMETER
+212,gimbal yaw limit,PARAMETER
+213,battery health,PARAMETER
+214,aircraft,COMPONENT
+215,home point,PARAMETER
+216,return to home,ACTION
+217,auto landing,STATE
+218,taking off,ACTION
+219,flight mode,PARAMETER
+220,multiple flight modes,FUNCTION
+221,atti,STATE
+222,sport modes,STATE
+223,landing,ACTION
+224,flight mode,PARAMETER
+225,multiple flight modes,FUNCTION
+226,atti,STATE
+227,sport modes,STATE
+228,gps position mismatch,ISSUE
+229,gps position mismatch,ISSUE
+230,gps position mismatch,ISSUE
+231,gps position mismatch,ISSUE
+232,gps position mismatch,ISSUE
+233,gps position mismatch,ISSUE
+234,gps position mismatch,ISSUE
+235,gps position mismatch,ISSUE
+236,gps position mismatch,ISSUE
+237,gps position mismatch,ISSUE
+238,gps position mismatch,ISSUE
+239,large wind velocity,ISSUE
+240,gps position mismatch,ISSUE
+241,gps position mismatch,ISSUE
+242,gps position mismatch,ISSUE
+243,gps position mismatch,ISSUE
+244,gps position mismatch,ISSUE
+245,gps position mismatch,ISSUE
+246,gps position mismatch,ISSUE
+247,gps position mismatch,ISSUE
+248,gps position mismatch,ISSUE
+249,gps position mismatch,ISSUE
+250,gps position mismatch,ISSUE
+251,gps position mismatch,ISSUE
+252,gps position mismatch,ISSUE
+253,gps position mismatch,ISSUE
+254,large wind velocity,ISSUE
+255,landing,ACTION
+256,aircraft,COMPONENT
+257,aircraft,COMPONENT
+258,aircraft,COMPONENT
+259,home point,PARAMETER
+260,return-to-home altitude,PARAMETER
+261,data recorder,COMPONENT
+262,file index,PARAMETER
+263,home point,PARAMETER
+264,return-to-home altitude,PARAMETER
+265,remote controller,COMPONENT
+266,interference,ISSUE
+267,home point,PARAMETER
+268,remote controller,COMPONENT
+269,interference,ISSUE
+270,home point,PARAMETER
+271,rth altitude,PARAMETER
+272,home point,PARAMETER
+273,taking off,ACTION
+274,home point,PARAMETER
+275,large wind velocity,ISSUE
+276,maximum flight distance,PARAMETER
+277,mc settings,FUNCTION
+278,maximum flight distance,PARAMETER
+279,mc settings,FUNCTION
+280,mobile device version,PARAMETER
+281,hd image transmission,FUNCTION
+282,image transmission mode,PARAMETER
+283,normal mode,STATE
+284,intelligent flight modes,FUNCTION
+285,main controller settings,FUNCTION
+286,home point,PARAMETER
+287,gps position mismatch,ISSUE
+288,gps position mismatch,ISSUE
+289,gps position mismatch,ISSUE
+290,gps position mismatch,ISSUE
+291,gps position mismatch,ISSUE
+292,gps position mismatch,ISSUE
+293,gps position mismatch,ISSUE
+294,gps position mismatch,ISSUE
+295,gps position mismatch,ISSUE
+296,gps position mismatch,ISSUE
+297,gps position mismatch,ISSUE
+298,gps position mismatch,ISSUE
+299,gps position mismatch,ISSUE
+300,gps position mismatch,ISSUE
+301,gps position mismatch,ISSUE
+302,gps position mismatch,ISSUE
+303,gps position mismatch,ISSUE
+304,home point,PARAMETER
+305,obstacle sensing,FUNCTION
+306,aircraft,COMPONENT
+307,weak signal,ISSUE
+308,antennas,COMPONENT
+309,antennas,COMPONENT
+310,aircraft,COMPONENT
+311,home point,PARAMETER
+312,downlink lost,ISSUE
+313,data recorder,COMPONENT
+314,file index,PARAMETER
+315,p (positioning)-mode,STATE
+316,s (sport)-mode,STATE
+317,intelligent flight modes,FUNCTION
+318,main controller settings,FUNCTION
+319,home point,PARAMETER
+320,rth altitude,PARAMETER
+321,data recorder,COMPONENT
+322,file index,PARAMETER
+323,home point,PARAMETER
+324,downlink,FUNCTION
+325,downlink lost,ISSUE
+326,aircraft mode,PARAMETER
+327,screen,COMPONENT
+328,taking off,ACTION
+329,home point,PARAMETER
+330,max flight distance,PARAMETER
+331,main controller settings,FUNCTION
+332,max flight distance,PARAMETER
+333,main controller settings,FUNCTION
+334,return-to-home altitude,PARAMETER
+335,home point,PARAMETER
+336,sensing system,FUNCTION
+337,weak gps signal,ISSUE
+338,aircraft,COMPONENT
+339,attitude mode,STATE
+340,rth altitude,PARAMETER
+341,gps position mismatch,ISSUE
+342,gps position mismatch,ISSUE
+343,gps position mismatch,ISSUE
+344,gps position mismatch,ISSUE
+345,gps position mismatch,ISSUE
+346,gps position mismatch,ISSUE
+347,gps position mismatch,ISSUE
+348,large wind velocity,ISSUE
+349,gps position mismatch,ISSUE
+350,gps position mismatch,ISSUE
+351,gps position mismatch,ISSUE
+352,gps position mismatch,ISSUE
+353,gps position mismatch,ISSUE
+354,gps position mismatch,ISSUE
+355,gps position mismatch,ISSUE
+356,gps position mismatch,ISSUE
+357,gps position mismatch,ISSUE
+358,gps position mismatch,ISSUE
+359,gps position mismatch,ISSUE
+360,gps position mismatch,ISSUE
+361,gps position mismatch,ISSUE
+362,remote controller assisted takeoff,ACTION
+363,home point,PARAMETER
+364,return-to-home altitude,PARAMETER
+365,high wind velocity,ISSUE
+366,high wind velocity,ISSUE
+367,home point,PARAMETER
+368,remote controller assisted takeoff,ACTION
+369,strong interference,ISSUE
+370,aircraft,COMPONENT
+371,signal interruption,ISSUE
+372,aircraft,COMPONENT
+373,home point,PARAMETER
+374,rth altitude,PARAMETER
+375,home point,PARAMETER
+376,rth altitude,PARAMETER
+377,attitude,PARAMETER
+378,attitude,PARAMETER
+379,attitude,PARAMETER
+380,attitude,PARAMETER
+381,attitude,PARAMETER
+382,high wind velocity,ISSUE
+383,attitude,PARAMETER
+384,attitude,PARAMETER
+385,attitude,PARAMETER
+386,attitude,PARAMETER
+387,attitude,PARAMETER
+388,attitude,PARAMETER
+389,attitude,PARAMETER
+390,attitude,PARAMETER
+391,attitude,PARAMETER
+392,satellite positioning,FUNCTION
+393,satellite positioning,FUNCTION
+394,satellite positioning,FUNCTION
+395,screen,COMPONENT
+396,taking off,ACTION
+397,return-to-home altitude,PARAMETER
+398,rth,ACTION
+399,cruise,STATE
+400,taking off,ACTION
+401,taking off,ACTION
+402,home point,PARAMETER
+403,rth altitude,PARAMETER
+404,screen,COMPONENT
+405,max flight distance,PARAMETER
+406,main controller settings,FUNCTION
+407,max flight distance,PARAMETER
+408,main controller settings,FUNCTION
+409,home point,PARAMETER
+410,rth altitude,PARAMETER
+411,taking off,ACTION
+412,home point,PARAMETER
+413,rth altitude,PARAMETER
+414,taking off,ACTION
+415,max flight distance,PARAMETER
+416,main controller settings,FUNCTION
+417,max flight distance,PARAMETER
+418,main controller settings,FUNCTION
+419,max flight distance,PARAMETER
+420,main controller settings,FUNCTION
+421,landing,ACTION
+422,max flight distance,PARAMETER
+423,main controller settings,FUNCTION
+424,taking off,ACTION
+425,taking off,ACTION
+426,home point,PARAMETER
+427,rth altitude,PARAMETER
+428,aircraft,COMPONENT
+429,home point,PARAMETER
+430,minimum rth altitude,PARAMETER
+431,rth altitude,PARAMETER
+432,remote controller settings,FUNCTION
+433,rth,ACTION
+434,locating,ACTION
+435,landing point,PARAMETER
+436,obstacle avoidance,FUNCTION
+437,home point,PARAMETER
+438,landing gear,COMPONENT
+439,landing gear,COMPONENT
+440,landing gear,COMPONENT
+441,landing gear,COMPONENT
+442,home point,PARAMETER
+443,landing gear,COMPONENT
+444,landing gear,COMPONENT
+445,taking off,ACTION
+446,taking off,ACTION
+447,home point,PARAMETER
+448,rth,ACTION
+449,preascending,STATE
+450,aircraft,COMPONENT
+451,home point,PARAMETER
+452,minimum rth altitude,PARAMETER
+453,rth altitude,PARAMETER
+454,remote controller settings,FUNCTION
+455,rth,ACTION
+456,rth,ACTION
+457,ascending,STATE
+458,rth altitude,PARAMETER
+459,precision landing,FUNCTION
+460,rectifying,ACTION
+461,aircraft,COMPONENT
+462,precision landing,FUNCTION
+463,rectifying,ACTION
+464,aircraft,COMPONENT
+465,precision landing,FUNCTION
+466,rectifying,ACTION
+467,aircraft,COMPONENT
+468,precision landing,FUNCTION
+469,rectifying,ACTION
+470,aircraft,COMPONENT
+471,precision landing,FUNCTION
+472,rectifying,ACTION
+473,aircraft,COMPONENT
+474,screen,COMPONENT
+475,compass redundancy switch,ISSUE
+476,aircraft,COMPONENT
+477,home point,PARAMETER
+478,minimum rth altitude,PARAMETER
+479,rth altitude,PARAMETER
+480,remote controller settings,FUNCTION
+481,rth,ACTION
+482,locating,ACTION
+483,landing point,PARAMETER
+484,home point,PARAMETER
+485,sd card,COMPONENT
+486,write speed,PARAMETER
+487,too slow,ISSUE
+488,maximum flight distance,PARAMETER
+489,mc settings,FUNCTION
+490,backward obstacle sensing,FUNCTION
+491,weak gps signal,ISSUE
+492,aircraft,COMPONENT
+493,attitude mode,STATE
+494,rth altitude,PARAMETER
+495,home point,PARAMETER
+496,gps position mismatch,ISSUE
+497,gps position mismatch,ISSUE
+498,gps position mismatch,ISSUE
+499,gps position mismatch,ISSUE
+500,gps position mismatch,ISSUE
+501,gps position mismatch,ISSUE
+502,gps position mismatch,ISSUE
+503,gps position mismatch,ISSUE
+504,gps position mismatch,ISSUE
+505,gps position mismatch,ISSUE
+506,gps position mismatch,ISSUE
+507,gps position mismatch,ISSUE
+508,gps position mismatch,ISSUE
+509,gps position mismatch,ISSUE
+510,obstacle sensing,FUNCTION
+511,aircraft,COMPONENT
+512,high wind velocity,ISSUE
+513,aircraft,COMPONENT
+514,home point,PARAMETER
+515,forward obstacle sensing,FUNCTION
+516,satellite positioning,FUNCTION
+517,screen,COMPONENT
+518,descending,ACTION
+519,exited,ACTION
+520,visual avoidance system,FUNCTION
+521,precision landing,FUNCTION
+522,rectifying,ACTION
+523,aircraft position,PARAMETER
+524,precision landing,FUNCTION
+525,rectifying,ACTION
+526,aircraft position,PARAMETER
+527,rectifying,ACTION
+528,aircraft position,PARAMETER
+529,home point,PARAMETER
+530,return-to-home altitude,PARAMETER
+531,screen,COMPONENT
+532,screen,COMPONENT
+533,rth,ACTION
+534,heading alignment,STATE
+535,precision landing,FUNCTION
+536,rectifying,ACTION
+537,aircraft,COMPONENT
+538,precision landing,FUNCTION
+539,rectifying,ACTION
+540,aircraft,COMPONENT
+541,precision landing,FUNCTION
+542,rectifying,ACTION
+543,aircraft,COMPONENT
+544,precision landing,FUNCTION
+545,rectifying,ACTION
+546,aircraft,COMPONENT
+547,home point,PARAMETER
+548,rth altitude,PARAMETER
+549,screen,COMPONENT
+550,flight mode,PARAMETER
+551,attitude,STATE
+552,flight mode,PARAMETER
+553,gps,STATE
+554,flight mode,PARAMETER
+555,gps,STATE
+556,flight mode,PARAMETER
+557,attitude,STATE
+558,flight mode,PARAMETER
+559,gps,STATE
+560,flight mode,PARAMETER
+561,attitude,STATE
+562,flight mode,PARAMETER
+563,attitude,STATE
+564,battery signal error,ISSUE
+565,battery connection,PARAMETER
+566,flight mode,PARAMETER
+567,attitude,STATE
+568,maximum flight distance,PARAMETER
+569,mc settings,FUNCTION
+570,maximum flight distance,PARAMETER
+571,mc settings,FUNCTION
+572,rth altitude,PARAMETER
+573,maximum flight distance,PARAMETER
+574,mc settings,FUNCTION
+575,strong interference,ISSUE
+576,compass error,ISSUE
+577,exit,ACTION
+578,p-gps mode,STATE
+579,strong wireless interference,ISSUE
+580,strong wireless interference,ISSUE
+581,low power,ISSUE
+582,returning home,ACTION
+583,taking off,ACTION
+584,aircraft,COMPONENT
+585,aircraft,COMPONENT
+586,aircraft,COMPONENT
+587,aircraft,COMPONENT
+588,max flight distance,PARAMETER
+589,main controller settings,FUNCTION
+590,max flight distance,PARAMETER
+591,main controller settings,FUNCTION
+592,flight mode,PARAMETER
+593,multiple flight modes,FUNCTION
+594,settings menu,FUNCTION
+595,returning,ACTION
+596,home point,PARAMETER
+597,landing,ACTION
+598,braking,ACTION
+599,sticks,COMPONENT
+600,strong interference,ISSUE
+601,downlink,FUNCTION
+602,downlink,FUNCTION
+603,downlink lost,ISSUE
+604,braking,ACTION
+605,sticks,COMPONENT
+606,aircraft,COMPONENT
+607,home point,PARAMETER
+608,return-to-home mode,STATE
+609,auto landing mode,STATE
+610,exited,ACTION
+611,visual avoidance system,FUNCTION
+612,braking,ACTION
+613,sticks,COMPONENT
+614,aircraft,COMPONENT
+615,satellite positioning,FUNCTION
+616,strong interference,ISSUE
+617,taking off,ACTION
+618,braking,ACTION
+619,sticks,COMPONENT
+620,braking,ACTION
+621,sticks,COMPONENT
+622,large wind velocity,ISSUE
+623,flight route,PARAMETER
+624,flight route,PARAMETER
+625,flight route,PARAMETER
+626,aircraft,COMPONENT
+627,quickshot mode,STATE
+628,camera settings,STATE
+629,activetrack,STATE
+630,subject lost,ISSUE
+631,searching,ACTION
+632,battery,COMPONENT
+633,rth,ACTION
+634,backward obstacle sensing,FUNCTION
+635,backward obstacle sensing,FUNCTION
+636,home point,PARAMETER
+637,return-to-home altitude,PARAMETER
+638,forward obstacle sensing,FUNCTION
+639,downlink,FUNCTION
+640,downlink,FUNCTION
+641,high wind velocity,ISSUE
+642,aircraft,COMPONENT
+643,weak signal,ISSUE
+644,antennas,COMPONENT
+645,antennas,COMPONENT
+646,aircraft,COMPONENT
+647,downlink lost,ISSUE
+648,high wind velocity,ISSUE
+649,aircraft,COMPONENT
+650,high wind velocity,ISSUE
+651,aircraft,COMPONENT
+652,aircraft,COMPONENT
+653,battery,COMPONENT
+654,rth,ACTION
+655,low power,ISSUE
+656,returning home,ACTION
+657,precision landing,FUNCTION
+658,correcting,ACTION
+659,landing position,PARAMETER
+660,backward obstacle sensing,FUNCTION
+661,home point,PARAMETER
+662,return-to-home altitude,PARAMETER
+663,rth,ACTION
+664,preascending,STATE
+665,low power,ISSUE
+666,returning home,ACTION
+667,precision landing,FUNCTION
+668,correcting,ACTION
+669,landing position,PARAMETER
+670,precision landing,FUNCTION
+671,correcting,ACTION
+672,landing position,PARAMETER
+673,precision landing,FUNCTION
+674,correcting,ACTION
+675,landing position,PARAMETER
+676,precision landing,FUNCTION
+677,correcting,ACTION
+678,landing position,PARAMETER
+679,precision landing,FUNCTION
+680,correcting,ACTION
+681,landing position,PARAMETER
+682,high wind velocity,ISSUE
+683,aircraft,COMPONENT
+684,high wind velocity,ISSUE
+685,battery,COMPONENT
+686,rth,ACTION
+687,aircraft,COMPONENT
+688,aircraft,COMPONENT
+689,aircraft,COMPONENT
+690,aircraft,COMPONENT
+691,aircraft,COMPONENT
+692,remote controller right dial,FUNCTION
+693,weak signal,ISSUE
+694,antenna,COMPONENT
+695,signal block,ISSUE
+696,takeoff,ACTION
+697,travel mode,STATE
+698,exit,ACTION
+699,travel mode,STATE
+700,takeoff,ACTION
+701,travel mode,STATE
+702,exit,ACTION
+703,travel mode,STATE
+704,takeoff,ACTION
+705,travel mode,STATE
+706,exit,ACTION
+707,travel mode,STATE
+708,flight mode,PARAMETER
+709,attitude,STATE
+710,flight mode,PARAMETER
+711,gps,STATE
+712,landing gear,COMPONENT
+713,landing gear,COMPONENT
+714,weak gps signal,ISSUE
+715,aircraft,COMPONENT
+716,attitude mode,STATE
+717,weak gps signal,ISSUE
+718,aircraft,COMPONENT
+719,attitude mode,STATE
+720,home point,PARAMETER
+721,return-to-home altitude,PARAMETER
+722,data recorder,COMPONENT
+723,file index,PARAMETER
+724,rth altitude,PARAMETER
+725,landing,ACTION
+726,downlink,FUNCTION
+727,home point,PARAMETER
+728,rth altitude,PARAMETER
+729,mobile device cpu,COMPONENT
+730,strong wireless interference,ISSUE
+731,strong wireless interference,ISSUE
+732,strong wireless interference,ISSUE
+733,strong wireless interference,ISSUE
+734,strong wireless interference,ISSUE
+735,strong wireless interference,ISSUE
+736,aircraft,COMPONENT
+737,taking off,ACTION
+738,palmcontrol,ACTION
+739,away and follow,STATE
+740,aircraft,COMPONENT
+741,subject lost,ISSUE
+742,searching,ACTION
+743,aircraft,COMPONENT
+744,max flight distance,PARAMETER
+745,main controller settings,FUNCTION
+746,battery,COMPONENT
+747,rth,ACTION
+748,aircraft,COMPONENT
+749,aircraft,COMPONENT
+750,attitude mode,STATE
+751,home point,PARAMETER
+752,return-to-home altitude,PARAMETER
+753,aircraft,COMPONENT
+754,attitude mode,STATE
+755,braking,ACTION
+756,sticks,COMPONENT
+757,aircraft,COMPONENT
+758,attitude mode,STATE
+759,non-p mode,STATE
+760,flight mode,PARAMETER
+761,aircraft,COMPONENT
+762,attitude mode,STATE
+763,home point,PARAMETER
+764,return-to-home altitude,PARAMETER
+765,aircraft,COMPONENT
+766,attitude mode,STATE
+767,aircraft,COMPONENT
+768,attitude mode,STATE
+769,home point,PARAMETER
+770,return-to-home altitude,PARAMETER
+771,home point,PARAMETER
+772,return-to-home altitude,PARAMETER
+773,aircraft,COMPONENT
+774,aircraft,COMPONENT
+775,activetrack,STATE
+776,activetrack,STATE
+777,control signal,FUNCTION
+778,aircraft,COMPONENT
+779,activetrack,STATE
+780,max speed,PARAMETER
+781,obstacle avoidance,FUNCTION
+782,aircraft gps interference,ISSUE
+783,aircraft,COMPONENT
+784,land,ACTION
+785,reutrn to home,ACTION
+786,aircraft,COMPONENT
+787,max altitude,PARAMETER
+788,aircraft,COMPONENT
+789,sport mode,STATE
+790,aircraft,COMPONENT
+791,tripod mode,STATE
+792,aircraft,COMPONENT
+793,aircraft stationary,STATE
+794,level,STATE
+795,aircraft,COMPONENT
+796,aircraft,COMPONENT
+797,vision system,FUNCTION
+798,obstacle sensing,FUNCTION
+799,aircraft,COMPONENT
+800,phone number,PARAMETER
+801,phone number,PARAMETER
+802,aircraft propulsion system,FUNCTION
+803,error,ISSUE
+804,landing,ACTION
+805,aircraft,COMPONENT
+806,land,ACTION
+807,aircraft settings,PARAMETER
+808,aircraft,COMPONENT
+809,follow me mode,STATE
+810,altitude,PARAMETER
+811,follow me mode,STATE
+812,apas,FUNCTION
+813,end point,PARAMETER
+814,waypoints,PARAMETER
+815,attitude,PARAMETER
+816,backward obstacle sensing,FUNCTION
+817,attitude,PARAMETER
+818,forward obstacle sensing,FUNCTION
+819,auxiliary bottom light,COMPONENT
+820,automatic mode,FUNCTION
+821,auxiliary bottom light,COMPONENT
+822,backward obstacle sensing,FUNCTION
+823,ambient light,PARAMETER
+824,battery cells,COMPONENT
+825,battery error,ISSUE
+826,returning to home,ACTION
+827,battery level,PARAMETER
+828,battery,COMPONENT
+829,battery power,PARAMETER
+830,aircraft,COMPONENT
+831,return to home,ACTION
+832,battery,COMPONENT
+833,low voltage protection,FUNCTION
+834,cache space full,ISSUE
+835,camera error,ISSUE
+836,aircraft,COMPONENT
+837,camera error,ISSUE
+838,ai spot-check,FUNCTION
+839,camera,COMPONENT
+840,camera settings,PARAMETER
+841,return-to-home,ACTION
+842,failed,ISSUE
+843,activetrack,STATE
+844,ambient light,PARAMETER
+845,tapfly,STATE
+846,activetrack,STATE
+847,takeoff,ACTION
+848,gimbal tilt,PARAMETER
+849,pano mode,STATE
+850,aircraft,COMPONENT
+851,propellers,COMPONENT
+852,propellers,COMPONENT
+853,aircraft,COMPONENT
+854,takeoff,ACTION
+855,motor error,ISSUE
+856,compass abnormal,ISSUE
+857,aircraft,COMPONENT
+858,compass,COMPONENT
+859,takeoff,ACTION
+860,compass error,ISSUE
+861,magnetic interference,ISSUE
+862,compass error,ISSUE
+863,compass error,ISSUE
+864,compass,COMPONENT
+865,compass error,ISSUE
+866,compass error,ISSUE
+867,compass,COMPONENT
+868,compass error,ISSUE
+869,compass redundancy switch,FUNCTION
+870,compass,COMPONENT
+871,aircraft,COMPONENT
+872,critical low battery,ISSUE
+873,aircraft,COMPONENT
+874,auto power off protection,FUNCTION
+875,landing,ACTION
+876,critical low battery,ISSUE
+877,aircraft,COMPONENT
+878,returning to home,ACTION
+879,critical low battery,ISSUE
+880,take off,ACTION
+881,critically low power,ISSUE
+882,aircraft,COMPONENT
+883,landing,ACTION
+884,critically low power,ISSUE
+885,aircraft,COMPONENT
+886,landing,ACTION
+887,speed,PARAMETER
+888,sticks,COMPONENT
+889,critically low voltage,ISSUE
+890,aircraft,COMPONENT
+891,land,ACTION
+892,critically low voltage,ISSUE
+893,land,ACTION
+894,battery,COMPONENT
+895,critically low voltage,ISSUE
+896,aircraft,COMPONENT
+897,land,ACTION
+898,crystalsky,COMPONENT
+899,monitor,COMPONENT
+900,overheating,ISSUE
+901,elevation,PARAMETER
+902,sd card,COMPONENT
+903,write protection,FUNCTION
+904,distance limit,PARAMETER
+905,downward ambient light,PARAMETER
+906,obstacle avoidance,FUNCTION
+907,downward obstacle sensing,FUNCTION
+908,ambient light,PARAMETER
+909,downward sensor,COMPONENT
+910,aircraft,COMPONENT
+911,altitude,PARAMETER
+912,downward vision sensor,COMPONENT
+913,backward forward downward upward sensing,FUNCTION
+914,ambient light,PARAMETER
+915,flight distance,PARAMETER
+916,extra payload,ISSUE
+917,max altitude,PARAMETER
+918,extra payload,ISSUE
+919,max altitude,PARAMETER
+920,max distance,PARAMETER
+921,extra payload,ISSUE
+922,aircraft,COMPONENT
+923,home point,PARAMETER
+924,landing gear,COMPONENT
+925,gimbal,COMPONENT
+926,landing,ACTION
+927,flight altitude,PARAMETER
+928,flight distance,PARAMETER
+929,forward vision sensor,COMPONENT
+930,gimbal,COMPONENT
+931,gimbal,COMPONENT
+932,gimbal,COMPONENT
+933,gimbal,COMPONENT
+934,gps signal,FUNCTION
+935,aircraft,COMPONENT
+936,takeoff,ACTION
+937,takeoff,ACTION
+938,aircraft braking distance,PARAMETER
+939,flight time,PARAMETER
+940,imu,PARAMETER
+941,imu,PARAMETER
+942,imu,PARAMETER
+943,taking off,ACTION
+944,low battery,ISSUE
+945,manned aircraft,COMPONENT
+946,max altitude,PARAMETER
+947,altitude limit,PARAMETER
+948,motor error,ISSUE
+949,propellers,COMPONENT
+950,motor,COMPONENT
+951,propellers,COMPONENT
+952,motor,COMPONENT
+953,motor,COMPONENT
+954,navigation system,FUNCTION
+955,aircraft,COMPONENT
+956,no sd card,ISSUE
+957,card,COMPONENT
+958,panorama,ACTION
+959,payload mode,STATE
+960,max altitude,PARAMETER
+961,max distance,PARAMETER
+962,precision landing,ACTION
+963,landing point,PARAMETER
+964,propeller,COMPONENT
+965,return to home,ACTION
+966,land,ACTION
+967,propeller,COMPONENT
+968,remote controller,COMPONENT
+969,aircraft,COMPONENT
+970,remote controller signal,FUNCTION
+971,aircraft,COMPONENT
+972,rth altitude,PARAMETER
+973,rtk base station,COMPONENT
+974,smart track,STATE
+975,strong aircraft interference,ISSUE
+976,subject lost,ISSUE
+977,camera,COMPONENT
+978,tap-zoom,FUNCTION
+979,dual gimbal control mode,STATE
+980,take off,ACTION
+981,aircraft,COMPONENT
+982,compass,COMPONENT
+983,unknown error,ISSUE
+984,takeoff,ACTION
+985,vision sensor(s),FUNCTION
+986,critically low battery,ISSUE
+987,battery,COMPONENT
+988,motor obstructed,ISSUE
+989,weak gps signal,ISSUE
+990,image transmission signal,FUNCTION
+991,antennas,COMPONENT
+992,weak signal,ISSUE
+993,remote controller,COMPONENT
+994,aircraft,COMPONENT
+995,aircraft,COMPONENT
+996,aircraft,COMPONENT
