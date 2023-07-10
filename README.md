@@ -2,11 +2,11 @@
 
 DDFLER (Definition-accompanied Drone Flight Log Entity Recognizer) is an open-source CLI-based tool developed using Python programming language and supported by a fine-tuned BERT model to perform named entity recognition on drone flight log data, specifically the log messages. The BERT model is hosted on the HuggingFace platform to make it publicly available and accessible. The tool expects decrypted DJI flight log files as input and generates a forensic report in a PDF containing a forensic timeline with the highlighted parts on the mentioned entities in the log messages. The generated file can be used as an attachment to a complete forensic report and help the forensic investigator pinpoint critical events on the constructed forensic timeline.
 
-DDFLER has four three features i.e., forensic timeline construction, term extraction, and forensic report generation. The needed input are flight log files that can be acquired from controller devices such as Android-based or iOS-based smartphone.
+DDFLER has three core features i.e., forensic timeline construction, term extraction, and forensic report generation. The needed input are flight log files that can be acquired from controller devices such as Android-based or iOS-based smartphone.
 
 ## Files Structure
 
-Here is the folder structure of DFLER. There will be more files in `flight_logs` and `sample_output` folder, as we prepared a number of decrypted flight log files for input.
+Here is the folder structure of DDFLER. There will be more files in `flight_logs` and `sample_output` folder, as we prepared a number of decrypted flight log files for input.
 
 ```
 .
