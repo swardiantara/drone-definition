@@ -14,7 +14,7 @@ from utils.statistics import compute_mean_statistics
 
 def calculate_bert_score(generated_defs, reference_defs):
     # Calculate BERTScore
-    P, R, F1 = score(generated_defs, reference_defs, model_type='microsoft/deberta-v3-large')
+    P, R, F1 = score(generated_defs, reference_defs, model_type='microsoft/deberta-v3-large', device='cpu')
 
     # P: Precision scores
     # R: Recall scores
@@ -46,8 +46,8 @@ def compute_mean_std(generated_defs, reference_defs):
 
 def compute_distance(prompt, definition, model='instructor'):
     # Instantiate the Embedding Model (T5 Encoder or all-MiniLM-L6-v2)
-    embedder = INSTRUCTOR('hkunlp/instructor-base') if model == 'instructor' else SentenceTransformer(
-        'sentence-transformers/all-MiniLM-L6-v2')
+    embedder = INSTRUCTOR('hkunlp/instructor-base', device='cpu') if model == 'instructor' else SentenceTransformer(
+        'sentence-transformers/all-MiniLM-L6-v2', device='cpu')
     query = [['Represent the drone term definition: ', prompt]]
     document = [['Represent the drone term definition: ', definition]]
 
