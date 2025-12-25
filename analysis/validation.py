@@ -69,9 +69,11 @@ def main():
         'Precision_Mean': [],
         'Recall_Mean': [],
         'F1_Mean': [],
+        'Cos_Mean': [],
         'Precision_Std': [],
         'Recall_Std': [],
         'F1_Std': [],
+        'Cos_Std': [],
     }
 
     print("Deepseek New Prompt: Previous vs. JSON Evaluation")
