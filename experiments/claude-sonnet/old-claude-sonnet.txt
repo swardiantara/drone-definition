@@ -1,0 +1,21 @@
+Term: Sport Mode
+Definition: From a drone expert's perspective, Sport Mode (also known as S-Mode) is a specialized flight mode that optimizes a drone's performance for high-speed, agile flight by:
+
+Key Characteristics:
+1. Enhanced Speed: Maximizes the drone's velocity capabilities, typically increasing top speed by 30-40% compared to normal mode
+2. Increased Responsiveness: Provides more aggressive control inputs and faster reaction times
+3. Disabled Obstacle Avoidance: Usually deactivates obstacle detection systems to prevent interference during high-speed maneuvers
+4. Modified Flight Parameters:
+- Higher maximum tilt angles
+- Increased acceleration/deceleration rates
+- More sensitive control inputs
+- Reduced GPS dependence
+
+Technical Considerations:
+- Higher power consumption
+- Reduced flight time due to increased motor strain
+- Greater skill requirement for safe operation
+- Increased risk of crashes due to reduced safety features
+- Typically used for sport flying, racing, or dynamic cinematography
+
+Sport Mode requires advanced piloting skills and should be used with caution, as the reduced safety features and increased performance capabilities can lead to accidents if not properly managed.

@@ -1,0 +1,123 @@
+Sport Mode:
+Definition: A flight mode that allows the drone to achieve higher speeds and more agile maneuvers for recreational or sporty flying. In Sport Mode, the drone's safety features may be limited to enhance performance.
+Confidence: High
+
+Positioning Mode:
+Definition: A flight mode that uses GPS and other sensors to stabilize the drone's position in the air. Positioning Mode is suitable for precise flying, aerial photography, and autonomous flight functions.
+Confidence: High
+
+Attitude Mode:
+Definition: A flight mode that controls the drone based on its orientation and angle relative to the ground instead of GPS position. Attitude Mode is used for manual flying and acrobatic maneuvers.
+Confidence: High
+
+Remote Controller:
+Definition: The handheld device used by the operator to control the drone's flight, camera, and other features wirelessly. The remote controller communicates with the drone via radio signals.
+Confidence: High
+
+Interference:
+Definition: Unwanted signals or disturbances that disrupt communication between the drone and its controller, sensors, or GPS. Interference can cause loss of control, navigation errors, or flight stability issues.
+Confidence: High
+
+Gyroscope:
+Definition: A sensor that measures orientation and angular velocity of the drone's movement. Gyroscopes help the flight controller detect and stabilize the drone's position in the air.
+Confidence: High
+
+LOS (Line Of Sight):
+Definition: The direct visibility between the drone and the operator. Flying within LOS is a regulatory requirement in many regions to ensure safe and controlled operation of the drone.
+Confidence: High
+
+Payload:
+Definition: Additional equipment or items carried by the drone, such as cameras, sensors, or cargo. The payload affects the drone's performance, flight time, and capabilities.
+Confidence: High
+
+RTH (Return to Home):
+Definition: A safety feature that automatically directs the drone to fly back to its takeoff point or designated home location. RTH is activated in case of low battery, signal loss, or pressing a dedicated button on the remote controller.
+Confidence: High
+
+VLOS (Visual Line of Sight):
+Definition: The distance up to which the operator can see and control the drone with unaided vision. Operating within VLOS is crucial for maintaining situational awareness and safe flight operations.
+Confidence: High
+
+RTK (Real-Time Kinematic):
+Definition: A precise GPS technology that provides centimeter-level accuracy by using correction signals from ground stations. RTK is used for drone mapping, surveying, and other applications requiring high precision positioning.
+Confidence: High
+
+Anti-Collision:
+Definition: Systems or sensors designed to detect and prevent collisions with obstacles, terrain, or other aircraft. Anti-collision features enhance the safety of drone flights, especially in complex environments.
+Confidence: High
+
+Drone:
+Definition: An unmanned aerial vehicle (UAV) that is operated remotely or autonomously for various purposes, including photography, surveillance, mapping, and delivery.
+Confidence: High
+
+Follow Me Mode:
+Definition: A flight mode where the drone autonomously tracks and follows a moving subject, usually based on GPS or signal from the remote controller. Follow Me Mode is commonly used for capturing dynamic footage or monitoring activities.
+Confidence: High
+
+Gimbal:
+Definition: A mechanical device that stabilizes and controls the orientation of the camera mounted on the drone. A gimbal improves the quality of aerial photography and video by reducing vibrations and maintaining a steady shot.
+Confidence: High
+
+GPS:
+Definition: Global Positioning System, a satellite-based navigation system used by drones to determine their precise location, speed, and altitude. GPS is essential for autonomous flight, waypoint navigation, and accurate positioning.
+Confidence: High
+
+Hover:
+Definition: A flight maneuver where the drone maintains a stable position in the air without drifting or changing altitude. Hovering is essential for photography, video recording, and precise control during flight.
+Confidence: High
+
+Home Point:
+Definition: The initial takeoff location or designated landing spot set as a reference point for the drone's return to home feature. The home point is crucial for the drone to navigate back safely in case of emergencies.
+Confidence: High
+
+IMU (Inertial Measurement Unit):
+Definition: A sensor system that combines accelerometers and gyroscopes to measure and track the drone's orientation, velocity, and acceleration. The IMU provides critical data for flight control and stabilization.
+Confidence: High
+
+Intelligent Flight Modes:
+Definition: Pre-programmed flight modes or features available on advanced drones to automate specific maneuvers, such as automatic takeoff and landing, orbiting, and follow modes. Intelligent flight modes enhance user experience and enable creative aerial shots.
+Confidence: High
+
+No-Fly Zone:
+Definition: Restricted airspace areas where drone flight is prohibited or regulated due to safety, privacy, or security concerns. No-fly zones are typically designated around airports, military installations, and sensitive locations.
+Confidence: High
+
+Obstacle Avoidance System:
+Definition: Sensors and algorithms that detect and avoid obstacles in the drone's flight path to prevent collisions. The obstacle avoidance system enhances safety and maneuverability in complex environments.
+Confidence: High
+
+Propeller Guard:
+Definition: Protective barriers or shields installed around the drone's propellers to reduce the risk of injury or damage in case of collisions. Propeller guards improve safety during flight, especially in indoor or close proximity operations.
+Confidence: High
+
+Remote ID:
+Definition: A regulatory requirement for drones to broadcast identification information, such as the drone's registration number and operator details, for remote tracking and identification by authorities. Remote ID enhances accountability and airspace safety.
+Confidence: High
+
+Waypoint:
+Definition: Predefined GPS coordinates or locations set for the drone to navigate autonomously along a programmed flight path. Waypoint navigation allows the drone to fly to specific points, follow routes, and perform automated missions.
+Confidence: High
+
+Propellers:
+Definition: Rotating blades attached to the motors that generate lift and thrust to propel the drone through the air. Propellers come in various sizes, shapes, and materials to optimize performance and efficiency.
+Confidence: High
+
+Tripod mode:
+Definition: A flight mode that slows down the drone's movement and sensitivity for precise and stable hovering. Tripod mode is ideal for capturing smooth footage or conducting detailed inspections.
+Confidence: High
+
+Pitch:
+Definition: The rotation of the drone around its lateral axis, causing the nose to move up or down. Pitch controls the drone's forward or backward movement during flight.
+Confidence: High
+
+Throttle:
+Definition: The control input that adjusts the drone's motor speed and lift, controlling the drone's altitude. Throttle is used to ascend, descend, and maintain the drone's vertical position in the air.
+Confidence: High
+
+Yaw:
+Definition: The rotation of the drone around its vertical axis, changing its heading or direction. Yaw controls the drone's left or right movement, enabling it to turn or rotate in the air.
+Confidence: High
+
+Roll:
+Definition: The rotation of the drone around its longitudinal axis, causing it to tilt sideways. Roll controls the drone's lateral movement or banking during flight maneuvers.
+Confidence: High

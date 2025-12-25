@@ -1,0 +1,123 @@
+Term: Sport Mode
+Definition: A flight mode that prioritizes agility and speed, often disabling or reducing the effectiveness of obstacle avoidance systems and other automated flight features.  It allows for more responsive control and higher speeds, but requires greater pilot skill.
+Confidence: High
+
+Term: Positioning Mode
+Definition: A flight mode that uses GPS and/or other positioning systems (like optical flow) to maintain a specific location and altitude. This mode often includes features like automatic hovering and return-to-home.
+Confidence: High
+
+Term: Attitude Mode
+Definition: A flight mode that relies on the drone's gyroscopes and accelerometers to maintain a stable orientation.  It does not actively maintain a specific position, allowing the drone to drift with wind or other forces.  Also known as "manual mode."
+Confidence: High
+
+Term: Remote Controller
+Definition: A handheld device used by the pilot to control the drone's flight and other functions. It typically transmits commands to the drone and receives telemetry data back.
+Confidence: High
+
+Term: Interference
+Definition: Unwanted electromagnetic or radio frequency signals that can disrupt communication between the drone and its remote controller, GPS signals, or other onboard systems.
+Confidence: High
+
+Term: Gyroscope
+Definition: A sensor that measures angular rate or rotational motion.  In drones, gyroscopes are crucial for flight stabilization and maintaining orientation.
+Confidence: High
+
+Term: LOS (Line Of Sight)
+Definition: The direct visual path between the drone pilot and the drone.  Maintaining LOS is often a regulatory requirement for drone operations.
+Confidence: High
+
+Term: Payload
+Definition: The weight that a drone can carry in addition to its own weight.  Payload can include cameras, sensors, packages, or other equipment.
+Confidence: High
+
+Term: RTH (Return to Home)
+Definition: A feature that automatically flies the drone back to its designated home point, usually the takeoff location. This is often triggered by a low battery or loss of signal.
+Confidence: High
+
+Term: VLOS (Visual Line of Sight)
+Definition:  Similar to LOS, VLOS specifically refers to the pilot's ability to see the drone with their own eyes (unaided or with corrective lenses).
+Confidence: High
+
+Term: RTK (Real-Time Kinematic)
+Definition: A GNSS (Global Navigation Satellite System) positioning technique that uses corrections from a base station to provide significantly higher positional accuracy compared to standard GPS.
+Confidence: High
+
+Term: Anti-Collision
+Definition: Systems designed to prevent collisions with obstacles. These systems may use sensors like radar, lidar, or cameras to detect obstacles and automatically adjust the drone's flight path.
+Confidence: High
+
+Term: Drone
+Definition: An unmanned aircraft (UAS).  Often used interchangeably with UAV (Unmanned Aerial Vehicle).
+Confidence: High
+
+Term: Follow Me Mode
+Definition: An intelligent flight mode where the drone automatically follows a designated object or person, often using GPS or other tracking technologies.
+Confidence: High
+
+Term: Gimbal
+Definition: A mechanical system that stabilizes a camera or other payload, allowing it to remain level and pointed in a desired direction regardless of the drone's movements.
+Confidence: High
+
+Term: GPS
+Definition: Global Positioning System. A satellite-based navigation system that provides location and time information.  Drones use GPS for positioning, navigation, and return-to-home functionality.
+Confidence: High
+
+Term: Hover
+Definition: The ability of a drone to maintain a stable position in the air without moving horizontally or vertically.
+Confidence: High
+
+Term: Home Point
+Definition: The designated location to which a drone will return in RTH mode. This is usually the takeoff point but can be set by the pilot.
+Confidence: High
+
+Term: IMU (Inertial Measurement Unit)
+Definition: A device that combines accelerometers and gyroscopes to measure motion and orientation.  IMUs are essential for flight control and stabilization.
+Confidence: High
+
+Term: Intelligent Flight Modes
+Definition: Pre-programmed flight patterns or automated maneuvers that can be executed by the drone, such as Follow Me, Orbit, or Waypoint navigation.
+Confidence: High
+
+Term: No-Fly Zone
+Definition: Designated areas where drone flights are restricted or prohibited, typically for safety or security reasons.
+Confidence: High
+
+Term: Obstacle Avoidance System
+Definition: A system that uses sensors to detect obstacles and automatically maneuver the drone to avoid collisions.
+Confidence: High
+
+Term: Propeller Guard
+Definition: A protective frame that surrounds the propellers to prevent damage to the propellers or surrounding objects in case of a collision.
+Confidence: High
+
+Term: Remote ID
+Definition: A technology that allows drones to transmit identification and location information, often to aid in air traffic management and regulatory compliance.
+Confidence: High
+
+Term: Waypoint
+Definition: A pre-defined geographical location that a drone is programmed to fly to. Waypoints are used in automated flight planning.
+Confidence: High
+
+Term: Propellers
+Definition: Rotating blades that generate thrust, enabling the drone to take off, fly, and maneuver.
+Confidence: High
+
+Term: Tripod mode
+Definition: A flight mode that limits the drone's speed and movement, often used for capturing stable video footage or for precise maneuvering in tight spaces.
+Confidence: Medium
+
+Term: Pitch
+Definition: The rotation of the drone around its lateral axis (side to side), causing the nose to move up or down.
+Confidence: High
+
+Term: Throttle
+Definition: The control input that regulates the drone's motor speed and thus its lift, allowing it to ascend or descend.
+Confidence: High
+
+Term: Yaw
+Definition: The rotation of the drone around its vertical axis, causing it to turn left or right.
+Confidence: High
+
+Term: Roll
+Definition: The rotation of the drone around its longitudinal axis (front to back), causing it to tilt left or right.
+Confidence: High

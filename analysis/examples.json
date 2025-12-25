@@ -1,0 +1,52 @@
+[
+    {
+        "term": "Accelerometer",
+        "definition": "A device that measures acceleration or fast changes in movement. The flight controller (the drone's central processing unit) uses an accelerometer for the UAVs for flight stabilization.",
+        "confidence": "High"
+    },
+    {
+        "term": "IR Lock",
+        "definition": "A technology that allows drones to lock onto a specific infrared source, used in search and rescue operations to find heat signatures of people or animals.",
+        "confidence": "High"
+    },
+    {
+        "term": "LiDAR (Light Detection and Ranging)",
+        "definition": "A remote sensing technology that measures distance by illuminating a target with laser light and analyzing the reflected light. In the drone industry, LiDAR is used for creating high-resolution maps, surveying landscapes, and in autonomous navigation systems for obstacle detection and avoidance.",
+        "confidence": "High"
+    },
+    {
+        "term": "Signal-to-Noise Ratio (SNR)",
+        "definition": "The measure of signal strength relative to background noise. A higher SNR indicates a clearer signal, which is crucial for reliable control and data transmission between the drone and its controller, especially in environments with high electromagnetic interference or at long distances.",
+        "confidence": "High"
+    },
+    {
+        "term": "Over-the-Horizon (OTH)",
+        "definition": "Drone operations where the drone flies beyond the visual line of sight (BVLOS) of the operator. OTH operations require advanced communication technologies, such as satellite links, to maintain control and monitor the drone's systems. These operations are beneficial for long-range tasks, including environmental monitoring, search and rescue missions, and infrastructure inspection.",
+        "confidence": "High"
+    },
+    {
+        "term": "Optical Flow",
+        "definition": "Technology used in navigation to determine the drone's movement relative to the ground. By analyzing the motion of patterns on the ground through a downward-facing camera, drones can maintain a stable hover without GPS, estimate their speed, and detect obstacles. Optical flow is particularly useful in indoor environments or areas where GPS is unreliable.",
+        "confidence": "High"
+    },
+    {
+        "term": "NOTAM (Notice to Airmen)",
+        "definition": "A Notice to Airmen (NOTAM) is a notice given to warn aircraft or UAS pilots of any possible hazards or flight restrictions along a flight route or specific location.",
+        "confidence": "High"
+    },
+    {
+        "term": "GCS (Ground Control Station)",
+        "definition": "This software runs on the ground on a computer. It receives telemetry information via an airborne UAV. It displays its status and progress. This frequently includes sensor and video data. It can also be used for transmitting in-flight commands up to the UAV in the air.",
+        "confidence": "High"
+    },
+    {
+        "term": "Servo",
+        "definition": "A shorter name for servomotor or servomechanism. Aerial vehicles use servomotors for various functions such as pan cameras and wing flaps adjustments which can be controlled from the ground.",
+        "confidence": "High"
+    },
+    {
+        "term": "INS (Inertial Navigation System)",
+        "definition": "A system that calculates position based on the initial GPS reading while incorporating speed and motion sensor readings. Useful when a drone loses GPS signal.",
+        "confidence": "High"
+    }
+]

@@ -46,6 +46,8 @@ def get_model_args(model_type):
     args.max_seq_length = 64
     args.output_dir = f"outputs/{model_name}"
     args.best_model_dir = f"outputs/{model_name}/best_model"
+    args.save_steps = -1
+    args.save_model_every_epoch = False
 
     return args
 

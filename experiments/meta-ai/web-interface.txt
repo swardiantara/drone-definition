@@ -1,0 +1,123 @@
+Term: Sport Mode
+Definition: A flight mode that allows for more aggressive and responsive flight, often used for aerial photography, videography, or racing.
+Confidence: High
+
+Term: Positioning Mode
+Definition: A flight mode that uses GPS to maintain a steady position and altitude, often used for tasks that require precise hovering, such as aerial photography or inspection.
+Confidence: High
+
+Term: Attitude Mode
+Definition: A flight mode that uses sensors to maintain a steady attitude (orientation) and altitude, but does not use GPS to maintain position, often used for indoor flight or in areas with weak GPS signals.
+Confidence: High
+
+Term: Remote Controller
+Definition: A handheld device used to control the drone's flight, typically using radio frequency (RF) or Wi-Fi signals.
+Confidence: High
+
+Term: Gyroscope
+Definition: A sensor that measures the drone's orientation and rotation, used to maintain stability and control.
+Confidence: High
+
+Term: Gimbal
+Definition: A mechanical stabilization system that uses motors and sensors to keep a camera or other payload stable and level, regardless of the drone's movements.
+Confidence: High
+
+Term: Anti-Collision
+Definition: A system that uses sensors to detect obstacles and prevent collisions, often used in combination with obstacle avoidance systems.
+Confidence: High
+
+Term: LOS (Line Of Sight)
+Definition: The direct visual line between the drone and the pilot, required for safe and legal flight.
+Confidence: High
+
+Term: VLOS (Visual Line of Sight)
+Definition: The ability to see the drone at all times during flight, required for safe and legal flight.
+Confidence: High
+
+Term: RTK (Real-Time Kinematic)
+Definition: A high-precision GPS technique that uses a network of reference stations to provide accurate location information, often used for surveying, mapping, and precision agriculture.
+Confidence: High
+
+Term: Drone
+Definition: A type of unmanned aerial vehicle (UAV) that is remotely controlled or flies autonomously using pre-programmed instructions.
+Confidence: High
+
+Term: Payload
+Definition: The weight or cargo that a drone is designed to carry, such as cameras, sensors, or packages.
+Confidence: High
+
+Term: Interference
+Definition: Unwanted signals or radiation that can disrupt the drone's communication or navigation systems.
+Confidence: High
+
+Term: Follow Me Mode
+Definition: A feature that allows the drone to follow the pilot or a designated subject, often used for aerial photography or videography.
+Confidence: High
+
+Term: RTH (Return to Home)
+Definition: A feature that allows the drone to automatically return to its home point in case of an emergency or when activated by the pilot.
+Confidence: High
+
+Term: GPS
+Definition: A satellite-based navigation system that provides location information and timing signals, used by drones to determine their position and altitude.
+Confidence: High
+
+Term: IMU (Inertial Measurement Unit)
+Definition: A sensor that combines data from accelerometers, gyroscopes, and sometimes magnetometers to measure the drone's acceleration, orientation, and rotation.
+Confidence: High
+
+Term: Home Point
+Definition: A designated location that the drone will return to in case of an emergency or when the "Return to Home" (RTH) feature is activated.
+Confidence: High
+
+Term: Hover
+Definition: A state of flight where the drone maintains a steady position and altitude, often used for tasks such as aerial photography or inspection.
+Confidence: High
+
+Term: Tripod mode
+Definition: A flight mode that reduces the drone's speed and increases its stability, often used for tasks such as aerial photography or videography.
+Confidence: High
+
+Term: Intelligent Flight Modes
+Definition: Advanced flight modes that use sensors and software to enable features such as obstacle avoidance, follow me, and waypoint navigation.
+Confidence: High
+
+Term: No-Fly Zone
+Definition: A designated area where drone flight is prohibited or restricted, often due to safety or security concerns.
+Confidence: High
+
+Term: Obstacle Avoidance System
+Definition: A system that uses sensors to detect obstacles and automatically adjust the drone's flight path to avoid them.
+Confidence: High
+
+Term: Propeller Guard
+Definition: A protective barrier that surrounds the propellers to prevent damage or injury in case of a crash or obstacle collision.
+Confidence: High
+
+Term: Pitch
+Definition: The rotation of the drone around its lateral axis, controlled by the pilot or autopilot system.
+Confidence: High
+
+Term: Throttle
+Definition: The control input that regulates the drone's altitude and airspeed, typically controlled by the pilot or autopilot system.
+Confidence: High
+
+Term: Yaw
+Definition: The rotation of the drone around its vertical axis, controlled by the pilot or autopilot system.
+Confidence: High
+
+Term: Roll
+Definition: The rotation of the drone around its longitudinal axis, controlled by the pilot or autopilot system.
+Confidence: High
+
+Term: Propellers
+Definition: The spinning blades that provide lift and propulsion for the drone.
+Confidence: High
+
+Term: Remote ID
+Definition: A system that allows drones to broadcast their identity and location, enabling authorities to track and monitor drone activity.
+Confidence: High
+
+Term: Waypoint
+Definition: A pre-programmed location that the drone will fly to, often used for tasks such as surveying, mapping, or inspection.
+Confidence: High

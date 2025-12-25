@@ -1,0 +1,123 @@
+Term: Sport Mode
+Definition: A flight mode that allows the drone to fly at its maximum speed and agility by reducing or disabling the assistance from GPS and other sensors, offering more direct control to the pilot.
+Confidence: Medium
+
+Term: Positioning Mode
+Definition: A flight mode that utilizes GPS and other sensors to maintain a stable position, making it easier for the pilot to hover and fly steadily.
+Confidence: High
+
+Term: Attitude Mode
+Definition: A flight mode that relies on the drone's internal sensors, such as gyroscopes and accelerometers, to maintain a stable attitude, without using GPS. This mode requires more manual control and is often used by experienced pilots.
+Confidence: Medium
+
+Term: Remote Controller
+Definition: A device used by the pilot to control the drone's movements and functions remotely.
+Confidence: High
+
+Term: Interference
+Definition: Disruption of the communication signal between the drone and the remote controller, or other electronic systems, which can be caused by electromagnetic waves, physical obstacles, or other devices operating on similar frequencies.
+Confidence: High
+
+Term: Gyroscope
+Definition: A sensor that measures the angular velocity or rate of rotation of the drone. This data is used by the flight controller to maintain stability and orientation.
+Confidence: High
+
+Term: LOS (Line Of Sight)
+Definition: The ability to see your drone from an operating position with your naked eye7.
+Confidence: High
+
+Term: Payload
+Definition: The maximum weight a drone can carry, including cameras, sensors, and other equipment, without compromising flight performance or safety7.
+Confidence: High
+
+Term: RTH (Return to Home)
+Definition: A GPS feature that when enabled, it returns the aircraft to the "home" position where it took off1.
+Confidence: High
+
+Term: VLOS (Visual Line of Sight)
+Definition: Operation of a UAV within the pilot’s direct, unaided line of sight. Regulatory agencies often require VLOS for certain operations unless waivers or special permissions are granted7.
+Confidence: High
+
+Term: RTK (Real-Time Kinematic)
+Definition: A high-precision GPS correction technology that enhances the accuracy of positioning data by using a base station to correct for errors in real-time, enabling centimeter-level accuracy1.
+Confidence: High
+
+Term: Anti-Collision
+Definition: Systems or technologies designed to prevent drones from colliding with obstacles or other aircraft, often involving sensors and automated avoidance maneuvers3.
+Confidence: High
+
+Term: Drone
+Definition: An aircraft that flies without a human pilot onboard, relying on remote control or autonomous systems for navigation and operation7. Also referred to as an Unmanned Aerial Vehicle (UAV)7.
+Confidence: High
+
+Term: Follow Me Mode
+Definition: An intelligent flight mode where the drone automatically follows a subject (e.g., the pilot) using GPS and visual tracking1.
+Confidence: Medium
+
+Term: Gimbal
+Definition: A mechanical device that stabilizes a camera or sensor, allowing it to remain steady even when the drone is moving or experiencing vibrations1.
+Confidence: High
+
+Term: GPS
+Definition: Global Positioning System; a satellite-based navigation system used to determine the precise location of the drone2.
+Confidence: High
+
+Term: Hover
+Definition: To maintain a stationary position in the air3.
+Confidence: High
+
+Term: Home Point
+Definition: The GPS location where the drone takes off, which is recorded by the drone and used as the return point when the Return to Home (RTH) function is activated1.
+Confidence: High
+
+Term: IMU (Inertial Measurement Unit)
+Definition: An electronic device that measures and reports a body's specific force, angular rate, and sometimes the orientation of the body, using a combination of accelerometers, gyroscopes, and sometimes magnetometers1.
+Confidence: High
+
+Term: Intelligent Flight Modes
+Definition: Automated flight patterns and assistance features enabled through onboard software and sensors, such as Follow Me, Waypoint Navigation, and Orbit Mode1.
+Confidence: High
+
+Term: No-Fly Zone
+Definition: An area where drone flights are restricted or prohibited. These zones are typically established around airports, government buildings, and sensitive infrastructure to ensure safety and security3.
+Confidence: High
+
+Term: Obstacle Avoidance System
+Definition: The system used by drones to detect and navigate around objects in their flight path. This feature is essential for safe operation, especially in complex environments or when the drone is flying autonomously3.
+Confidence: High
+
+Term: Propeller Guard
+Definition: Protective frames attached around the propellers to prevent damage during collisions and to protect people and objects from the spinning blades3.
+Confidence: High
+
+Term: Remote ID
+Definition: A technology that allows drones to be remotely identified, typically through a broadcast signal, to comply with aviation regulations and enhance airspace safety1.
+Confidence: High
+
+Term: Waypoint
+Definition: A set of GPS coordinates that define a specific location the drone will navigate to, often used to create automated flight paths1.
+Confidence: High
+
+Term: Propellers
+Definition: Rotating blades that generate thrust, lifting the drone into the air and enabling it to move3.
+Confidence: High
+
+Term: Tripod Mode
+Definition: A flight mode that reduces the drone's speed and responsiveness, making it easier to capture stable and smooth footage, similar to using a tripod for photography1.
+Confidence: Medium
+
+Term: Pitch
+Definition: The up or down rotation of the drone around its lateral axis, controlled by moving the control stick forward or backward1.
+Confidence: High
+
+Term: Throttle
+Definition: The control that regulates the motor speed, determining the drone's altitude or rate of ascent/descent1.
+Confidence: High
+
+Term: Yaw
+Definition: The rotation of the drone around its vertical axis, causing it to point left or right, controlled by the rudder1.
+Confidence: High
+
+Term: Roll
+Definition: The rotation of the drone around its longitudinal axis, causing it to bank left or right, controlled by the ailerons1.
+Confidence: High

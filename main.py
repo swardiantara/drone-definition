@@ -6,7 +6,7 @@ import json
 from tqdm import tqdm
 from datetime import datetime
 from os import system, name
-from parse import read_android_log, read_ios_log
+from parse_message import read_android_log, read_ios_log
 from generate_report import generate_report
 from simpletransformers.ner import NERModel
 import pandas as pd

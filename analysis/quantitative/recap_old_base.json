@@ -1,0 +1,29 @@
+{
+    "gpt3.5": {
+        "precision_mean": 64.629,
+        "precision_std": 5.5329999999999995,
+        "recall_mean": 72.911,
+        "recall_std": 6.013,
+        "f1_mean": 68.45,
+        "f1_std": 5.315,
+        "sum_distance": 8.61541
+    },
+    "gpt4": {
+        "precision_mean": 62.117999999999995,
+        "precision_std": 4.984,
+        "recall_mean": 74.47200000000001,
+        "recall_std": 5.2490000000000006,
+        "f1_mean": 67.684,
+        "f1_std": 4.777,
+        "sum_distance": 8.37704
+    },
+    "gpt4o": {
+        "precision_mean": 53.227000000000004,
+        "precision_std": 4.8,
+        "recall_mean": 75.375,
+        "recall_std": 5.775,
+        "f1_mean": 62.28900000000001,
+        "f1_std": 4.683,
+        "sum_distance": 8.36982
+    }
+}

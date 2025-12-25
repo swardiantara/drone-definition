@@ -1,0 +1,92 @@
+Sport Mode: A flight mode that increases drone speed and agility by reducing positioning assistance while maintaining basic stabilization. Typically used for dynamic filming or racing.
+Confidence: High
+
+Positioning Mode: Flight mode using GPS and vision sensors for precise hovering and controlled flight. Most common mode for photography and general flying.
+Confidence: High
+
+Attitude Mode: Basic flight mode that maintains altitude but doesn't use GPS for position holding. Relies on barometer and IMU only.
+Confidence: High
+
+Tripod Mode: Ultra-precise flight mode with reduced speed and control sensitivity for steady filming and indoor navigation.
+Confidence: High
+
+Pitch: The rotation of the drone forward or backward around its lateral axis.
+Confidence: High
+
+Roll: The rotation of the drone left or right around its longitudinal axis.
+Confidence: High
+
+Yaw: The rotation of the drone around its vertical axis (turning left or right).
+Confidence: High
+
+Throttle: Control input that determines the drone's vertical movement (up/down) by adjusting motor speed.
+Confidence: High
+
+Remote Controller: The handheld device used to control the drone, typically featuring control sticks, buttons, and sometimes a screen for telemetry data.
+Confidence: High
+
+Gyroscope: Sensor that measures rotational movement around three axes, crucial for maintaining flight stability.
+Confidence: High
+
+Payload: Any additional equipment carried by the drone (cameras, sensors, delivery packages, etc.).
+Confidence: High
+
+Gimbal: A motorized stabilization system that holds cameras or sensors, compensating for drone movement to maintain steady positioning.
+Confidence: High
+
+Propellers: The rotating blades that generate lift and thrust for the drone's flight.
+Confidence: High
+
+Propeller Guard: Protective frames around propellers to prevent damage from collisions and protect people from spinning blades.
+Confidence: High
+
+RTH (Return to Home): Automated function that returns the drone to its recorded takeoff point or set home location.
+Confidence: High
+
+RTK (Real-Time Kinematic): High-precision GPS positioning system that provides centimeter-level accuracy using base station corrections.
+Confidence: High
+
+Anti-Collision: Systems and sensors that detect and avoid obstacles during flight.
+Confidence: High
+
+Follow Me Mode: Intelligent flight mode where the drone automatically follows a moving subject while maintaining camera focus.
+Confidence: High
+
+GPS (Global Positioning System): Satellite-based navigation system used for precise positioning and flight planning.
+Confidence: High
+
+IMU (Inertial Measurement Unit): Combined sensor system including accelerometer and gyroscope for measuring movement and orientation.
+Confidence: High
+
+Intelligent Flight Modes: Pre-programmed flight patterns and automated functions for specific filming or survey tasks.
+Confidence: High
+
+Obstacle Avoidance System: Sensors and software that detect and avoid obstacles during flight.
+Confidence: High
+
+Remote ID: System that broadcasts drone identification and location information to other aircraft and authorities.
+Confidence: High
+
+Drone: An unmanned aircraft system (UAS) capable of sustained flight and remote operation.
+Confidence: High
+
+LOS (Line Of Sight): Direct visual path between two points, typically between controller and drone.
+Confidence: High
+
+VLOS (Visual Line Of Sight): Operating condition where the pilot maintains direct visual contact with the drone.
+Confidence: High
+
+Hover: Maintained stationary flight position in the air.
+Confidence: High
+
+Home Point: Recorded location (usually takeoff point) used as reference for RTH function.
+Confidence: High
+
+No-Fly Zone: Restricted airspace where drone operations are prohibited by law or regulation.
+Confidence: High
+
+Waypoint: Predetermined geographic coordinates used for automated flight planning.
+Confidence: High
+
+Interference: Electronic signals that disrupt communication between drone and controller.
+Confidence: High

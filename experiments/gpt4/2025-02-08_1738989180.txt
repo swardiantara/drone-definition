@@ -1,0 +1,123 @@
+Term: Sport Mode
+Definition: A type of flight mode available on certain drones offering higher speed and agility. This mode often disables certain safety features like obstacle avoidance.
+Confidence: High
+
+Term: Positioning Mode
+Definition: Commonly referred to as "P-mode", it's a flight mode where the drone uses GPS (or GLONASS) and vision systems to stabilize its position when hovering and achieve precise navigation and better control.
+Confidence: High
+
+Term: Attitude Mode
+Definition: Flight mode where the drone maintains its orientation (roll, pitch, and yaw), but does not leverage GPS for position hold. This allows for completely manual flight, often used by skilled pilots for specific maneuvers.
+Confidence: High
+
+Term: Remote Controller
+Definition: Handheld device used by the operator to maneuver drone, control camera gimbal, enable various features, and monitor drone status via built-in communication link.
+Confidence: High
+
+Term: Interference
+Definition: Any disturbance that may degrade, interrupt, or limit the effective performance of the drone, often in the context of signal transmission between the drone and the controller.
+Confidence: High
+
+Term: Gyroscope
+Definition: A device that measures angular velocity (rotation). It is one of the critical parts of Inertial Measurement Unit used in drone's flight controller to maintain and control drone's orientation.
+Confidence: High
+
+Term: LOS (Line Of Sight)
+Definition: Direct unaided (excluding devices such as binoculars) visual contact with the drone from the operator's perspective. LOS is fundamental for safe operation of manually controlled drones.
+Confidence: High
+
+Term: Payload
+Definition: The additional weight a drone can carry besides its own weight, including cameras, sensors, or other equipment, depending on its mission requirements.
+Confidence: High
+
+Term: RTH (Return to Home)
+Definition: An automated safety feature of drones which triggers the drone to return to its pre-set home point when the battery is low, the connection is lost, or manually triggered by the operator.
+Confidence: High
+
+Term: VLOS (Visual Line Of Sight)
+Definition: Term used in regulations to denote the maximum distance a drone can be flown away from its operator while still remaining visible.
+Confidence: High
+
+Term: RTK (Real-Time Kinematic)
+Definition: A high-precision GPS positioning technique providing centimeter-level accuracy, often used in drones for mapping and surveying applications.
+Confidence: High
+
+Term: Anti-Collision
+Definition: A system or feature in drones which uses sensors to detect potential obstacles and take steps to avoid a collision.
+Confidence: High
+
+Term: Drone
+Definition: A term commonly used to refer to an unmanned aircraft, operated remotely or autonomously.
+Confidence: High
+
+Term: Follow Me Mode
+Definition: An automatic control mode where the drone follows and keeps the camera targeted on the controller or another designated object.
+Confidence: High
+
+Term: Gimbal
+Definition: A pivoted support that allows the rotation of an object (often a camera) about a single axis. On drones, gimbals are used to stabilize cameras to capture smooth video footage.
+Confidence: High
+
+Term: GPS
+Definition: Global Positioning System, a satellite-based navigation system used for positioning, navigation, and timing services in drones.
+Confidence: High
+
+Term: Hover
+Definition: When a drone maintains a stable altitude and position using built-in stabilization technology.
+Confidence: High
+
+Term: Home Point
+Definition: The location to which the drone will return if Return-To-Home (RTH) mode is engaged.
+Confidence: High
+
+Term: IMU (Inertial Measurement Unit)
+Definition: A device that measures and reports specific force, angular rate, and sometimes the magnetic field surrounding the body using a combination of accelerometers and gyroscopes, and sometimes magnetometers. IMUs are used in drone systems to provide flight controller with necessary data about orientation and speed.
+Confidence: High
+
+Term: Intelligent Flight Modes
+Definition: Pre-programmed modes in some drones that use advanced flight control algorithms and sensors to perform complex maneuvers or follow preset flight paths automatically.
+Confidence: High
+
+Term: No-Fly Zone
+Definition: Areas defined by regulatory authorities where drone flights are restricted for safety and security reasons.
+Confidence: High
+
+Term: Obstacle Avoidance System
+Definition: A system equipped on certain drones using sensors to detect and avoid obstacles in its path.
+Confidence: High
+
+Term: Propeller Guard
+Definition: A protective accessory fitted around the propellers of a drone to reduce the risk of damage or injury from the spinning propellers.
+Confidence: High
+
+Term: Remote ID
+Definition: Digital identification that allows law enforcement, public and aviation safety officials to remotely identify and track drones in flight.
+Confidence: High
+
+Term: Waypoint
+Definition: A reference point in physical space used for purposes of navigation, often part of a pre-defined flight path in automated drone flights.
+Confidence: High
+
+Term: Propellers
+Definition: Rotating blades used by drones to generate lift. The thrust produced by spinning propellers allows the drone to ascend, descend, and hover.
+Confidence: High
+
+Term: Tripod mode
+Definition: A slow, precise flight mode designed for smooth and stable camera movements.
+Confidence: High
+
+Term: Pitch
+Definition: The tilting motion of a drone when it moves up or down, controlled by the adjustment of speed between the front and rear rotors.
+Confidence: High
+
+Term: Throttle
+Definition: The control on the remote controller that adjusts the overall speed of the drone’s propellers. Increasing the throttle causes the drone to ascend, while decreasing it causes the drone to descend.
+Confidence: High
+
+Term: Yaw
+Definition: The rotation of a drone around its vertical axis, causing the drone to turn left or right. This is usually achieved by adjusting the balance of power between left and right propellers.
+Confidence: High
+
+Term: Roll
+Definition: A drone's sideways movement, either to the left or right. This is achieved by adjusting the balance of power between the left and right sides of the drone.
+Confidence: High
