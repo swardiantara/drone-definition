@@ -90,7 +90,7 @@ def main():
     definition_dict['Recall_Std'].append(rec['std'])
     definition_dict['F1_Std'].append(f1['std'])
 
-    copilot_new = pd.read_excel(os.path.join('experiments', 'deepseek', 'new-copilot.xlsx')).sort_values('Term')
+    copilot_new = pd.read_excel(os.path.join('experiments', 'copilot', 'new-copilot.xlsx')).sort_values('Term')
     copilot_json = pd.read_json(os.path.join('experiments', 'copilot', 'web-json.json')).sort_values('Term')
 
     print("Copilot New Prompt: Previous vs. JSON Evaluation")
