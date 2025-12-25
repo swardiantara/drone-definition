@@ -1,9 +1,10 @@
-# Evaluation
-from bert_score import score
-import numpy as np
-import torch
 import os
+import torch
+import numpy as np
 import pandas as pd
+from bert_score import score
+from InstructorEmbedding import INSTRUCTOR
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 def compute_mean_std(precision, recall, f1):
@@ -29,6 +30,22 @@ def compute_mean_std(precision, recall, f1):
   }
 
   return pre, rec, f1
+
+
+def compute_similarity(texts1, texts2):
+    model = INSTRUCTOR('hkunlp/instructor-large')
+    
+    sim_list = []
+    for text1, text2 in zip(texts1, texts2):
+        sentences_a = [['Represent the sentence: ', text1]]
+        sentences_b = [['Represent the sentence: ', text2]]
+        embeddings_a = model.encode(sentences_a)
+        embeddings_b = model.encode(sentences_b)
+        similarities = cosine_similarity(embeddings_a,embeddings_b)
+        print(f"Similarity between '{text1}' and '{text2}': {similarities[0][0]}")
+        sim_list.append(similarities[0][0])
+
+    return np.array(sim_list)
 
 
 def calculate_bert_score(generated_defs, reference_defs):
@@ -59,72 +76,90 @@ def main():
 
     print("Deepseek New Prompt: Previous vs. JSON Evaluation")
     precision, recall, F1 = calculate_bert_score(deepseek_json['definition'].to_list(), deepseek_new['Definition'].to_list())
+    cos_sim = compute_similarity(deepseek_new['Definition'].to_list(), deepseek_json['definition'].to_list())
     pre, rec, f1 = compute_mean_std(precision, recall, F1)
     definition_dict['Model'].append('Deepseek New Prompt: Previous vs. JSON')
     definition_dict['Precision_Mean'].append(pre['mean'])
     definition_dict['Recall_Mean'].append(rec['mean'])
     definition_dict['F1_Mean'].append(f1['mean'])
+    definition_dict['Cos_Mean'].append(cos_sim.mean())
     definition_dict['Precision_Std'].append(pre['std'])
     definition_dict['Recall_Std'].append(rec['std'])
     definition_dict['F1_Std'].append(f1['std'])
+    definition_dict['Cos_Std'].append(cos_sim.std())
 
     print("\nDeepseek New Prompt: Previous vs. Reference")
     precision, recall, F1 = calculate_bert_score(reference_df['definition'].to_list(), deepseek_new['Definition'].to_list())
+    cos_sim = compute_similarity(deepseek_new['Definition'].to_list(), reference_df['definition'].to_list())
     pre, rec, f1 = compute_mean_std(precision, recall, F1)
     definition_dict['Model'].append('Deepseek New Prompt: Previous vs. Reference')
     definition_dict['Precision_Mean'].append(pre['mean'])
     definition_dict['Recall_Mean'].append(rec['mean'])
     definition_dict['F1_Mean'].append(f1['mean'])
+    definition_dict['Cos_Mean'].append(cos_sim.mean())
     definition_dict['Precision_Std'].append(pre['std'])
     definition_dict['Recall_Std'].append(rec['std'])
     definition_dict['F1_Std'].append(f1['std'])
+    definition_dict['Cos_Std'].append(cos_sim.std())
 
     print("\nDeepseek New Prompt: JSON vs. Reference")
     precision, recall, F1 = calculate_bert_score(reference_df['definition'].to_list(), deepseek_json['definition'].to_list())
+    cos_sim = compute_similarity(deepseek_json['definition'].to_list(), reference_df['definition'].to_list())
     pre, rec, f1 = compute_mean_std(precision, recall, F1)
     definition_dict['Model'].append('Deepseek New Prompt: JSON vs. Reference')
     definition_dict['Precision_Mean'].append(pre['mean'])
     definition_dict['Recall_Mean'].append(rec['mean'])
     definition_dict['F1_Mean'].append(f1['mean'])
+    definition_dict['Cos_Mean'].append(cos_sim.mean())
     definition_dict['Precision_Std'].append(pre['std'])
     definition_dict['Recall_Std'].append(rec['std'])
     definition_dict['F1_Std'].append(f1['std'])
+    definition_dict['Cos_Std'].append(cos_sim.std())
 
     copilot_new = pd.read_excel(os.path.join('experiments', 'copilot', 'new-copilot.xlsx')).sort_values('Term')
     copilot_json = pd.read_json(os.path.join('experiments', 'copilot', 'web-json.json')).sort_values('term')
 
     print("Copilot New Prompt: Previous vs. JSON Evaluation")
     precision, recall, F1 = calculate_bert_score(copilot_json['definition'].to_list(), copilot_new['Definition'].to_list())
+    cos_sim = compute_similarity(copilot_new['Definition'].to_list(), copilot_json['definition'].to_list())
     pre, rec, f1 = compute_mean_std(precision, recall, F1)
     definition_dict['Model'].append('Copilot New Prompt: Previous vs. JSON')
     definition_dict['Precision_Mean'].append(pre['mean'])
     definition_dict['Recall_Mean'].append(rec['mean'])
     definition_dict['F1_Mean'].append(f1['mean'])
+    definition_dict['Cos_Mean'].append(cos_sim.mean())
     definition_dict['Precision_Std'].append(pre['std'])
     definition_dict['Recall_Std'].append(rec['std'])
     definition_dict['F1_Std'].append(f1['std'])
+    definition_dict['Cos_Std'].append(cos_sim.std())
 
     print("\nCopilot New Prompt: Previous vs. Reference")
     precision, recall, F1 = calculate_bert_score(reference_df['definition'].to_list(), copilot_new['Definition'].to_list())
+    cos_sim = compute_similarity(copilot_new['Definition'].to_list(), reference_df['definition'].to_list())
     pre, rec, f1 = compute_mean_std(precision, recall, F1)
     definition_dict['Model'].append('Copilot New Prompt: Previous vs. Reference')
     definition_dict['Precision_Mean'].append(pre['mean'])
     definition_dict['Recall_Mean'].append(rec['mean'])
     definition_dict['F1_Mean'].append(f1['mean'])
+    definition_dict['Cos_Mean'].append(cos_sim.mean())
     definition_dict['Precision_Std'].append(pre['std'])
     definition_dict['Recall_Std'].append(rec['std'])
     definition_dict['F1_Std'].append(f1['std'])
+    definition_dict['Cos_Std'].append(cos_sim.std())
 
     print("\nCopilot New Prompt: JSON vs. Reference")
     precision, recall, F1 = calculate_bert_score(reference_df['definition'].to_list(), copilot_json['definition'].to_list())
+    cos_sim = compute_similarity(copilot_json['definition'].to_list(), reference_df['definition'].to_list())
     pre, rec, f1 = compute_mean_std(precision, recall, F1)
     definition_dict['Model'].append('Copilot New Prompt: JSON vs. Reference')
     definition_dict['Precision_Mean'].append(pre['mean'])
     definition_dict['Recall_Mean'].append(rec['mean'])
     definition_dict['F1_Mean'].append(f1['mean'])
+    definition_dict['Cos_Mean'].append(cos_sim.mean())
     definition_dict['Precision_Std'].append(pre['std'])
     definition_dict['Recall_Std'].append(rec['std'])
     definition_dict['F1_Std'].append(f1['std'])
+    definition_dict['Cos_Std'].append(cos_sim.std())
 
     new_df = pd.DataFrame.from_dict(definition_dict)
     new_df.to_excel(os.path.join('analysis', 'quantitative', 'validation.xlsx'), index=False )
