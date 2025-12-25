@@ -91,7 +91,7 @@ def main():
     definition_dict['F1_Std'].append(f1['std'])
 
     copilot_new = pd.read_excel(os.path.join('experiments', 'copilot', 'new-copilot.xlsx')).sort_values('Term')
-    copilot_json = pd.read_json(os.path.join('experiments', 'copilot', 'web-json.json')).sort_values('Term')
+    copilot_json = pd.read_json(os.path.join('experiments', 'copilot', 'web-json.json')).sort_values('term')
 
     print("Copilot New Prompt: Previous vs. JSON Evaluation")
     precision, recall, F1 = calculate_bert_score(copilot_json['definition'].to_list(), copilot_new['Definition'].to_list())
