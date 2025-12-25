@@ -41,6 +41,7 @@ def calculate_bert_score(generated_defs, reference_defs):
 
     return P, R, F1
 
+
 def main():
     deepseek_new = pd.read_excel(os.path.join('experiments', 'deepseek', 'new-deepseek.xlsx'), index_col=0).sort_values('Term')
     deepseek_json = pd.read_excel(os.path.join('experiments', 'deepseek', '2025-12-25_1766661574.xlsx'), index_col=0).sort_values('term')
@@ -88,3 +89,10 @@ def main():
     definition_dict['Precision_Std'].append(pre['std'])
     definition_dict['Recall_Std'].append(rec['std'])
     definition_dict['F1_Std'].append(f1['std'])
+
+    new_df = pd.DataFrame.from_dict(definition_dict)
+    new_df.to_excel(os.path.join('analysis', 'quantitative', 'validation.xlsx'), index=False )
+
+
+if __name__ == "__main__":
+    main()
